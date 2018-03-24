@@ -125,7 +125,7 @@
             "method": "GET",
             "header": [],
             "body": {},
-            "url": "{{domain}}/api/{{version}}/courses/id",
+            "url": "{{domain}}/api/{{version}}/courses/{{course_id}}",
             "description": "Course data"
           },
           "response": []
