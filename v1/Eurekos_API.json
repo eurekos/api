@@ -7,6 +7,12 @@
   },
   "item": [
     {
+      "_postman_id": "419a11ac-c347-4ff0-8d8d-74c0acaf8fe3",
+      "name": "Courses",
+      "description": "",
+      "item": []
+    },
+    {
       "_postman_id": "597ae733-00b2-4035-8eda-58ea19f7c8ba",
       "name": "Users",
       "description": null,
@@ -1071,12 +1077,6 @@
           "response": []
         }
       ]
-    },
-    {
-      "_postman_id": "419a11ac-c347-4ff0-8d8d-74c0acaf8fe3",
-      "name": "Courses",
-      "description": "",
-      "item": []
     }
   ],
   "auth": {
