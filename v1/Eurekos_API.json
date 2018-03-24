@@ -10,7 +10,28 @@
       "_postman_id": "419a11ac-c347-4ff0-8d8d-74c0acaf8fe3",
       "name": "Courses",
       "description": "",
-      "item": []
+      "item": [
+        {
+          "_postman_id": "85ecc854-92c2-4b30-965d-46cc89e7d7f2",
+          "name": "{{domain}}/api/{{version}}/courses",
+          "request": {
+            "auth": {
+              "type": "oauth2",
+              "oauth2": {
+                "accessToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImIyNmI4YzFiMmUzMzZkNjFiMTc0MWZkZDMyZmI2NzMxMDRkZDU0ZjI3OWIxZDQxZTFmZTk1OGMzYzYwZGU0NTk1MWExZGU3NzcyY2Y3MzI0In0.eyJhdWQiOiI4MkI5QTQ3OC00MjNENEUwMy1BQUFGNjRDQy03ODQ5QUNEOS0xNzJFQTE5OCIsImp0aSI6ImIyNmI4YzFiMmUzMzZkNjFiMTc0MWZkZDMyZmI2NzMxMDRkZDU0ZjI3OWIxZDQxZTFmZTk1OGMzYzYwZGU0NTk1MWExZGU3NzcyY2Y3MzI0IiwiaWF0IjoxNTIxODkzMzc1LCJuYmYiOjE1MjE4OTMzNzUsImV4cCI6MTUyMTg5Mzk3NSwic3ViIjoiIiwic2NvcGVzIjpbImRlZmF1bHQiXX0.S758ZsWAN2Di37NGbCKhRHoV3pkUG_C04xa2jt2eMkGMPf9RuyfbFTGtLdTRbMSickUpdRYM8rFPdCzCYJNaGvOhCt-5NDzjxRyBjZUSICGTgXq18NRdNbEcw1KDs6eaO_sUg5FwhHD_BeqPdtjPs3aN49FtSQSXSwH-PJtLcgs",
+                "tokenType": "Bearer",
+                "addTokenTo": "header"
+              }
+            },
+            "method": "GET",
+            "header": [],
+            "body": {},
+            "url": "{{domain}}/api/{{version}}/courses",
+            "description": "List of courses"
+          },
+          "response": []
+        }
+      ]
     },
     {
       "_postman_id": "597ae733-00b2-4035-8eda-58ea19f7c8ba",
