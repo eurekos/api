@@ -488,7 +488,7 @@
                 }
               ]
             },
-            "url": "{{domain}}/api/{{version}}/users/id",
+            "url": "{{domain}}/api/{{version}}/users/{{user_id}}",
             "description": "Update user"
           },
           "response": []
