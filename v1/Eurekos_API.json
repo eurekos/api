@@ -549,6 +549,13 @@
       "description": null,
       "item": [
         {
+          "_postman_id": "419a11ac-c347-4ff0-8d8d-74c0acaf8fe3",
+          "name": "Courses",
+          "description": "",
+          "item": [],
+          "_postman_isSubFolder": true
+        },
+        {
           "_postman_id": "7ac909df-7cd0-4472-a1e8-3d32ffa8c402",
           "name": "classes",
           "request": {
