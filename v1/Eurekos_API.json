@@ -1222,7 +1222,28 @@
       "_postman_id": "919bcad2-e6b2-4f73-b2f4-0c671b812e21",
       "name": "Videos",
       "description": null,
-      "item": []
+      "item": [
+        {
+          "_postman_id": "f1b359b8-9aac-45a3-b23d-698c47a4d8cd",
+          "name": "playlist/:id",
+          "request": {
+            "auth": {
+              "type": "oauth2",
+              "oauth2": {
+                "accessToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjM0OTRjYWQzZjc3NGZjNzY4NjU2ZDczOWFiOGVkZWMwYjg5ZTIzZTJiNmIxY2RmMjFmOTU1YzI0ZjAzYzkzNjI0ZTVjY2NjYzhhNzZmN2Y0In0.eyJhdWQiOiI4MkI5QTQ3OC00MjNENEUwMy1BQUFGNjRDQy03ODQ5QUNEOS0xNzJFQTE5OCIsImp0aSI6IjM0OTRjYWQzZjc3NGZjNzY4NjU2ZDczOWFiOGVkZWMwYjg5ZTIzZTJiNmIxY2RmMjFmOTU1YzI0ZjAzYzkzNjI0ZTVjY2NjYzhhNzZmN2Y0IiwiaWF0IjoxNTIxODk1MzYwLCJuYmYiOjE1MjE4OTUzNjAsImV4cCI6MTUyMTg5NTk2MCwic3ViIjoiIiwic2NvcGVzIjpbImRlZmF1bHQiXX0.G7rxTk3HxeCljma0rcb8b6XyFrWv_u8b0c9luuteVpBOjUuKv8TpmKBUF6wQzKIhqvm1mI_EPyMz6a2U00BgHnz31XjNjXJBM8041fpb4zq1hZBrho6Fnc5SWwfrgZ2U2eQtRces2UPlvVeQMnndpl7cALaDiz-Lr5RYjiObxrU",
+                "tokenType": "Bearer",
+                "addTokenTo": "header"
+              }
+            },
+            "method": "GET",
+            "header": [],
+            "body": {},
+            "url": "{{domain}}/api/{{version}}/playlist/id",
+            "description": "Video playlist data"
+          },
+          "response": []
+        }
+      ]
     }
   ],
   "auth": {
