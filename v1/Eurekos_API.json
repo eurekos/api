@@ -15,28 +15,7 @@
           "_postman_id": "cfe982cf-6261-4ac0-91fd-4174a8f64b0c",
           "name": "Course description",
           "description": null,
-          "item": [
-            {
-              "_postman_id": "b8a745a2-c7db-4100-a5af-9faf26e1394f",
-              "name": "courses/:id/description",
-              "request": {
-                "auth": {
-                  "type": "oauth2",
-                  "oauth2": {
-                    "accessToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjM0OTRjYWQzZjc3NGZjNzY4NjU2ZDczOWFiOGVkZWMwYjg5ZTIzZTJiNmIxY2RmMjFmOTU1YzI0ZjAzYzkzNjI0ZTVjY2NjYzhhNzZmN2Y0In0.eyJhdWQiOiI4MkI5QTQ3OC00MjNENEUwMy1BQUFGNjRDQy03ODQ5QUNEOS0xNzJFQTE5OCIsImp0aSI6IjM0OTRjYWQzZjc3NGZjNzY4NjU2ZDczOWFiOGVkZWMwYjg5ZTIzZTJiNmIxY2RmMjFmOTU1YzI0ZjAzYzkzNjI0ZTVjY2NjYzhhNzZmN2Y0IiwiaWF0IjoxNTIxODk1MzYwLCJuYmYiOjE1MjE4OTUzNjAsImV4cCI6MTUyMTg5NTk2MCwic3ViIjoiIiwic2NvcGVzIjpbImRlZmF1bHQiXX0.G7rxTk3HxeCljma0rcb8b6XyFrWv_u8b0c9luuteVpBOjUuKv8TpmKBUF6wQzKIhqvm1mI_EPyMz6a2U00BgHnz31XjNjXJBM8041fpb4zq1hZBrho6Fnc5SWwfrgZ2U2eQtRces2UPlvVeQMnndpl7cALaDiz-Lr5RYjiObxrU",
-                    "tokenType": "Bearer",
-                    "addTokenTo": "header"
-                  }
-                },
-                "method": "GET",
-                "header": [],
-                "body": {},
-                "url": "{{domain}}/api/{{version}}/courses/3631/description",
-                "description": "Course description data"
-              },
-              "response": []
-            }
-          ],
+          "item": [],
           "_postman_isSubFolder": true
         },
         {
@@ -155,6 +134,26 @@
             "body": {},
             "url": "{{domain}}/api/{{version}}/courses/id",
             "description": "Course data"
+          },
+          "response": []
+        },
+        {
+          "_postman_id": "b8a745a2-c7db-4100-a5af-9faf26e1394f",
+          "name": "courses/:id/description",
+          "request": {
+            "auth": {
+              "type": "oauth2",
+              "oauth2": {
+                "accessToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjM0OTRjYWQzZjc3NGZjNzY4NjU2ZDczOWFiOGVkZWMwYjg5ZTIzZTJiNmIxY2RmMjFmOTU1YzI0ZjAzYzkzNjI0ZTVjY2NjYzhhNzZmN2Y0In0.eyJhdWQiOiI4MkI5QTQ3OC00MjNENEUwMy1BQUFGNjRDQy03ODQ5QUNEOS0xNzJFQTE5OCIsImp0aSI6IjM0OTRjYWQzZjc3NGZjNzY4NjU2ZDczOWFiOGVkZWMwYjg5ZTIzZTJiNmIxY2RmMjFmOTU1YzI0ZjAzYzkzNjI0ZTVjY2NjYzhhNzZmN2Y0IiwiaWF0IjoxNTIxODk1MzYwLCJuYmYiOjE1MjE4OTUzNjAsImV4cCI6MTUyMTg5NTk2MCwic3ViIjoiIiwic2NvcGVzIjpbImRlZmF1bHQiXX0.G7rxTk3HxeCljma0rcb8b6XyFrWv_u8b0c9luuteVpBOjUuKv8TpmKBUF6wQzKIhqvm1mI_EPyMz6a2U00BgHnz31XjNjXJBM8041fpb4zq1hZBrho6Fnc5SWwfrgZ2U2eQtRces2UPlvVeQMnndpl7cALaDiz-Lr5RYjiObxrU",
+                "tokenType": "Bearer",
+                "addTokenTo": "header"
+              }
+            },
+            "method": "GET",
+            "header": [],
+            "body": {},
+            "url": "{{domain}}/api/{{version}}/courses/3631/description",
+            "description": "Course description data"
           },
           "response": []
         }
