@@ -1260,7 +1260,7 @@
             "method": "GET",
             "header": [],
             "body": {},
-            "url": "{{domain}}/api/{{version}}/playlist/id",
+            "url": "{{domain}}/api/{{version}}/playlist/{{playlist_id}}",
             "description": "Video playlist data"
           },
           "response": []
