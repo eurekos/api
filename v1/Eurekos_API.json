@@ -1,0 +1,1106 @@
+{
+  "info": {
+    "_postman_id": "ff5bf839-493f-4154-8361-7cb01fe11237",
+    "name": "Eurekos API",
+    "description": "# Authentication\n## OAuth 2.0 authorization flow\n\nEurekos API use the OAuth 2.0 protocol for authentication and authorization. Currently only client credentials scenario is supported.\n\n### Obtaining access token\n\n`POST oauth2/token`\n\nThis method allows to obtain an OAuth access token.\n\n#### Parameters  \n| Name          | Default value\t\t\t\t\t\t|\n| ------------- |-----------------------------------|\n| grant_type\t| client_credentials\t\t\t\t|\n| client_id     | Client ID provided by Eurekos\t\t|\n| client_secret | Client Secret provided by Eurekos |\n| scope         | default\t\t\t\t\t\t\t|",
+    "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+  },
+  "item": [
+    {
+      "_postman_id": "597ae733-00b2-4035-8eda-58ea19f7c8ba",
+      "name": "Users",
+      "description": null,
+      "item": [
+        {
+          "_postman_id": "7fb0f077-2348-4029-914c-cbbe3e1bf67b",
+          "name": "users",
+          "request": {
+            "auth": {
+              "type": "oauth2",
+              "oauth2": {
+                "accessToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImJlMDQyMGIwM2JmZjc1NDQ4ZTFiNzhmZDVhZmZlOTA0OTMyYjZkMTdhMjk0NTU0ZmY2YTkwM2VjMzhjZmQ0ZGIxZDRjYTAxOWI0YWM0ZDBjIn0.eyJhdWQiOiI2QUMyMTFBMi1BQjEzRTg2MC04RTY0QzAxNS04QTQxNTJGOC0zNEI3MzIwRiIsImp0aSI6ImJlMDQyMGIwM2JmZjc1NDQ4ZTFiNzhmZDVhZmZlOTA0OTMyYjZkMTdhMjk0NTU0ZmY2YTkwM2VjMzhjZmQ0ZGIxZDRjYTAxOWI0YWM0ZDBjIiwiaWF0IjoxNTIxNzE0MTUxLCJuYmYiOjE1MjE3MTQxNTEsImV4cCI6MTUyMTcxNDc1MSwic3ViIjoiIiwic2NvcGVzIjpbImRlZmF1bHQiXX0.izkMedOYTIjGs_5gXq59nBPB-gHgJMpt1eJg2B7gu3WJPnXJwnTNAfIxvbsS4wzKje3xDpfs5nXL8TI_OOIWejwEVN5kpGG4e9-45RFYn6YG3E44LwCEclI2maHtUyIIj6EPm_5gsfHBdRj8E_yX8IYbw3A53FAxd83LCW0JJDWreUtzwHprbxDGhjAZ1mJKVu-7AJSa4eyWk1In9VhW8O5W4xvYYrwdOE2LvxOg0ZhKgZsJUjUZkdGQRoIJRw9k0w8XZLZfEETm6i1gBbKE-Z3Pt-HxuczCyltrW3sS9DnKPmK43OoHC_kl_XdLguveqyKiJdwNW3gHnYnIujuaoQ",
+                "tokenType": "Bearer",
+                "addTokenTo": "header"
+              }
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "data[mail]",
+                  "value": "api@eurekos.com",
+                  "type": "text"
+                },
+                {
+                  "key": "data[name]",
+                  "value": "api.user",
+                  "type": "text"
+                }
+              ]
+            },
+            "url": "{{domain}}/api/{{version}}/users",
+            "description": "Create a user"
+          },
+          "response": []
+        },
+        {
+          "_postman_id": "8362c089-04f8-4bf6-a1de-cff735b9dcf7",
+          "name": "users",
+          "request": {
+            "auth": {
+              "type": "oauth2",
+              "oauth2": {
+                "accessToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImNkNzM4MGRiNGZjYTRmYjdlMThiZjQyNDc0ODM0OTVlNzM3ZmQwM2UwOWVkZWQxYTc2ODI1OTg0ZjQ5ZGUyZjUyZmUwMTU1OWM1NzhhNmFjIn0.eyJhdWQiOiI2QUMyMTFBMi1BQjEzRTg2MC04RTY0QzAxNS04QTQxNTJGOC0zNEI3MzIwRiIsImp0aSI6ImNkNzM4MGRiNGZjYTRmYjdlMThiZjQyNDc0ODM0OTVlNzM3ZmQwM2UwOWVkZWQxYTc2ODI1OTg0ZjQ5ZGUyZjUyZmUwMTU1OWM1NzhhNmFjIiwiaWF0IjoxNTIxNzI5OTc0LCJuYmYiOjE1MjE3Mjk5NzQsImV4cCI6MTUyMTczMDU3NCwic3ViIjoiIiwic2NvcGVzIjpbImRlZmF1bHQiXX0.tdIQg2GhDPZoGYAYeKimWU9Q148tAH07Qz7Tgh2ipupHz54UiXTKnNvbPUyWAraqiT6E5eG86C5BVffVpKK1SpkGIyNQxMsJVbek2oFoq5gq219GqRADuDYO0omoVp4IPJiRgN1dVwW6Pt8WUzCXicIqBxmcjYLtPcCPzzJ9X0YQBq5m0rDNT14Z3aDvwlZl9mO59HLonkpa67x01pKo0uqmUARu5dFC9ZaUJVdN3pCLv8rgoMC4QudB8FTLpL9cU9gC1sFksvdxm6t4XoG0-gHPO-WX-9cxiOlwiSqnOAl4atrkJbQ-YyaJRLCqv662m_2IylNn45AqHncevOXvpQ",
+                "tokenType": "Bearer",
+                "addTokenTo": "header"
+              }
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/x-www-form-urlencoded"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "url": "{{domain}}/api/{{version}}/users",
+            "description": "List of users"
+          },
+          "response": [
+            {
+              "id": "fe2c425d-9a5b-40f1-999b-44d4996cb965",
+              "name": "users",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/x-www-form-urlencoded",
+                    "disabled": false
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": ""
+                },
+                "url": "{{domain}}/api/{{version}}/users"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache, must-revalidate",
+                  "name": "Cache-Control",
+                  "description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive",
+                  "name": "Connection",
+                  "description": "Options that are desired for the connection"
+                },
+                {
+                  "key": "Content-Encoding",
+                  "value": "gzip",
+                  "name": "Content-Encoding",
+                  "description": "The type of encoding used on the data."
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "name": "Content-Type",
+                  "description": "The mime type of this content"
+                },
+                {
+                  "key": "Date",
+                  "value": "Thu, 22 Mar 2018 14:53:42 GMT",
+                  "name": "Date",
+                  "description": "The date and time that the message was sent"
+                },
+                {
+                  "key": "Expires",
+                  "value": "Sun, 19 Nov 1978 05:00:00 GMT",
+                  "name": "Expires",
+                  "description": "Gives the date/time after which the response is considered stale"
+                },
+                {
+                  "key": "Referrer-Policy",
+                  "value": "no-referrer-when-downgrade",
+                  "name": "Referrer-Policy",
+                  "description": "Custom header"
+                },
+                {
+                  "key": "Server",
+                  "value": "nginx",
+                  "name": "Server",
+                  "description": "A name for the server"
+                },
+                {
+                  "key": "Strict-Transport-Security",
+                  "value": "max-age=31536000",
+                  "name": "Strict-Transport-Security",
+                  "description": "A HSTS Policy informing the HTTP client how long to cache the HTTPS only policy and whether this applies to subdomains."
+                },
+                {
+                  "key": "Transfer-Encoding",
+                  "value": "chunked",
+                  "name": "Transfer-Encoding",
+                  "description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff",
+                  "name": "X-Content-Type-Options",
+                  "description": "The only defined value, \"nosniff\", prevents Internet Explorer from MIME-sniffing a response away from the declared content-type"
+                },
+                {
+                  "key": "X-UA-Compatible",
+                  "value": "IE=edge",
+                  "name": "X-UA-Compatible",
+                  "description": "Custom header"
+                },
+                {
+                  "key": "X-XSS-Protection",
+                  "value": "1; mode=block",
+                  "name": "X-XSS-Protection",
+                  "description": "Cross-site scripting (XSS) filter"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"data\": [\n        {\n            \"uid\": \"11\",\n            \"name\": \"Teacher1\",\n            \"mail\": \"teacher@eurekos.com\",\n            \"created\": \"1417562844\",\n            \"access\": \"1520416360\",\n            \"login\": \"0\",\n            \"status\": \"1\",\n            \"timezone\": \"Europe/Amsterdam\",\n            \"language\": \"en\",\n            \"full_name\": \"Teacher\",\n            \"roles\": [\n                \"3\",\n                \"6\"\n            ],\n            \"classes\": [\n                \"2\"\n            ]\n        },\n        {\n            \"uid\": \"12\",\n            \"name\": \"Student1\",\n            \"mail\": \"student@eurekos.com\",\n            \"created\": \"1417562932\",\n            \"access\": \"1494575343\",\n            \"login\": \"0\",\n            \"status\": \"1\",\n            \"timezone\": \"Europe/Amsterdam\",\n            \"language\": \"en\",\n            \"full_name\": \"Student\",\n            \"roles\": [\n                \"7\"\n            ],\n            \"classes\": [\n                \"3\",\n                \"6\"\n            ]\n        }\n    ],\n    \"meta\": {\n        \"totalPages\": 1\n    }\n}"
+            }
+          ]
+        },
+        {
+          "_postman_id": "6b485984-62f6-40c5-b8de-e0781acd6fd8",
+          "name": "users/:id",
+          "request": {
+            "auth": {
+              "type": "oauth2",
+              "oauth2": {
+                "accessToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImJlMDQyMGIwM2JmZjc1NDQ4ZTFiNzhmZDVhZmZlOTA0OTMyYjZkMTdhMjk0NTU0ZmY2YTkwM2VjMzhjZmQ0ZGIxZDRjYTAxOWI0YWM0ZDBjIn0.eyJhdWQiOiI2QUMyMTFBMi1BQjEzRTg2MC04RTY0QzAxNS04QTQxNTJGOC0zNEI3MzIwRiIsImp0aSI6ImJlMDQyMGIwM2JmZjc1NDQ4ZTFiNzhmZDVhZmZlOTA0OTMyYjZkMTdhMjk0NTU0ZmY2YTkwM2VjMzhjZmQ0ZGIxZDRjYTAxOWI0YWM0ZDBjIiwiaWF0IjoxNTIxNzE0MTUxLCJuYmYiOjE1MjE3MTQxNTEsImV4cCI6MTUyMTcxNDc1MSwic3ViIjoiIiwic2NvcGVzIjpbImRlZmF1bHQiXX0.izkMedOYTIjGs_5gXq59nBPB-gHgJMpt1eJg2B7gu3WJPnXJwnTNAfIxvbsS4wzKje3xDpfs5nXL8TI_OOIWejwEVN5kpGG4e9-45RFYn6YG3E44LwCEclI2maHtUyIIj6EPm_5gsfHBdRj8E_yX8IYbw3A53FAxd83LCW0JJDWreUtzwHprbxDGhjAZ1mJKVu-7AJSa4eyWk1In9VhW8O5W4xvYYrwdOE2LvxOg0ZhKgZsJUjUZkdGQRoIJRw9k0w8XZLZfEETm6i1gBbKE-Z3Pt-HxuczCyltrW3sS9DnKPmK43OoHC_kl_XdLguveqyKiJdwNW3gHnYnIujuaoQ",
+                "tokenType": "Bearer",
+                "addTokenTo": "header"
+              }
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/x-www-form-urlencoded"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "url": "{{domain}}/api/{{version}}/users/id",
+            "description": "User data"
+          },
+          "response": [
+            {
+              "id": "6992c986-876a-454a-8bbc-b9c7e6951679",
+              "name": "users/:id",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/x-www-form-urlencoded",
+                    "disabled": false
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": ""
+                },
+                "url": "{{domain}}/api/{{version}}/users/id"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache, must-revalidate",
+                  "name": "Cache-Control",
+                  "description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive",
+                  "name": "Connection",
+                  "description": "Options that are desired for the connection"
+                },
+                {
+                  "key": "Content-Encoding",
+                  "value": "gzip",
+                  "name": "Content-Encoding",
+                  "description": "The type of encoding used on the data."
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "name": "Content-Type",
+                  "description": "The mime type of this content"
+                },
+                {
+                  "key": "Date",
+                  "value": "Thu, 22 Mar 2018 14:56:55 GMT",
+                  "name": "Date",
+                  "description": "The date and time that the message was sent"
+                },
+                {
+                  "key": "Expires",
+                  "value": "Sun, 19 Nov 1978 05:00:00 GMT",
+                  "name": "Expires",
+                  "description": "Gives the date/time after which the response is considered stale"
+                },
+                {
+                  "key": "Referrer-Policy",
+                  "value": "no-referrer-when-downgrade",
+                  "name": "Referrer-Policy",
+                  "description": "Custom header"
+                },
+                {
+                  "key": "Server",
+                  "value": "nginx",
+                  "name": "Server",
+                  "description": "A name for the server"
+                },
+                {
+                  "key": "Strict-Transport-Security",
+                  "value": "max-age=31536000",
+                  "name": "Strict-Transport-Security",
+                  "description": "A HSTS Policy informing the HTTP client how long to cache the HTTPS only policy and whether this applies to subdomains."
+                },
+                {
+                  "key": "Transfer-Encoding",
+                  "value": "chunked",
+                  "name": "Transfer-Encoding",
+                  "description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff",
+                  "name": "X-Content-Type-Options",
+                  "description": "The only defined value, \"nosniff\", prevents Internet Explorer from MIME-sniffing a response away from the declared content-type"
+                },
+                {
+                  "key": "X-UA-Compatible",
+                  "value": "IE=edge",
+                  "name": "X-UA-Compatible",
+                  "description": "Custom header"
+                },
+                {
+                  "key": "X-XSS-Protection",
+                  "value": "1; mode=block",
+                  "name": "X-XSS-Protection",
+                  "description": "Cross-site scripting (XSS) filter"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"links\": {\n        \"self\": \"/api/v1/users/11\",\n        \"related\": \"/api/v1/users\"\n    },\n    \"data\": {\n        \"uid\": \"11\",\n        \"name\": \"Teacher1\",\n        \"mail\": \"teacher@eurekos.com\",\n        \"created\": \"1417562844\",\n        \"access\": \"1520416360\",\n        \"login\": \"0\",\n        \"status\": \"1\",\n        \"timezone\": \"Europe/Amsterdam\",\n        \"language\": \"en\",\n        \"full_name\": \"Teacher\",\n        \"roles\": [\n            3,\n            6\n        ],\n        \"classes\": [\n            \"3\"\n        ]\n    }\n}"
+            }
+          ]
+        },
+        {
+          "_postman_id": "c0c6c60a-3cc2-4ee3-83cb-84f6834e3e2f",
+          "name": "users/:id",
+          "request": {
+            "auth": {
+              "type": "oauth2",
+              "oauth2": {
+                "accessToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6Ijg1Yzc1Zjc0ZmZkMjNlNTgwNWM3MDE1NWQ2MWZhZDIwYjJiZDlmMTJhZDVhZDBlNWZmNmZhN2ZhN2YzZWZjNmU0Y2FlNjVkNWEyMGRjODFjIn0.eyJhdWQiOiI2QUMyMTFBMi1BQjEzRTg2MC04RTY0QzAxNS04QTQxNTJGOC0zNEI3MzIwRiIsImp0aSI6Ijg1Yzc1Zjc0ZmZkMjNlNTgwNWM3MDE1NWQ2MWZhZDIwYjJiZDlmMTJhZDVhZDBlNWZmNmZhN2ZhN2YzZWZjNmU0Y2FlNjVkNWEyMGRjODFjIiwiaWF0IjoxNTIxNzE0OTA3LCJuYmYiOjE1MjE3MTQ5MDcsImV4cCI6MTUyMTcxNTUwNywic3ViIjoiIiwic2NvcGVzIjpbImRlZmF1bHQiXX0.WFci3Q84SziEEz2Xv3KLoPuoxMjPEt9LQ_tSjSDSEEoYtyQrKRNKzA_C_ZzWvWfH-ubW6YAnrQuPH_u7x6DZrfa_64OpzCF85nXPY8Ll_LzyZGLPQJ8DB-OYIujO8A8Rokv2TpCi-TXN4HYLnTIOGwD2x4uiuSbeFF5uI5279vYkN5zCeCSarTbrWFSmaQPxUUpimonFlmRWOtg9ntV40OI0Y2jcBrtkSfjSQlatYPxo1Lj8ON_rGzIOqOGmUYuhZGCPb0arcodcvgUkpo7I7HZ1obuYFKCHtTl73oMcYEh1RVxvMx_T5Rl2OMQTrjpwE2mnqpkNywoWE4THBjk3nA",
+                "tokenType": "Bearer",
+                "addTokenTo": "header"
+              }
+            },
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/x-www-form-urlencoded"
+              }
+            ],
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": [
+                {
+                  "key": "data[mail]",
+                  "value": "api@eurekos.com",
+                  "type": "text"
+                }
+              ]
+            },
+            "url": "{{domain}}/api/{{version}}/users/id",
+            "description": "Update user"
+          },
+          "response": []
+        },
+        {
+          "_postman_id": "aa8b593b-8354-46a5-9603-335b9d8c775d",
+          "name": "users/:id",
+          "request": {
+            "auth": {
+              "type": "oauth2",
+              "oauth2": {
+                "accessToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImUxN2IyZjllODk0MTU4YTM2M2ZlOTZmMGIyMDE0YTMzNmQ1MWVlNGIzMGRjMmIwZmVmOTI3ZjU4MGZlMGIxMGJkYjFjMDI3ZTgzZmM5YTcxIn0.eyJhdWQiOiI2QUMyMTFBMi1BQjEzRTg2MC04RTY0QzAxNS04QTQxNTJGOC0zNEI3MzIwRiIsImp0aSI6ImUxN2IyZjllODk0MTU4YTM2M2ZlOTZmMGIyMDE0YTMzNmQ1MWVlNGIzMGRjMmIwZmVmOTI3ZjU4MGZlMGIxMGJkYjFjMDI3ZTgzZmM5YTcxIiwiaWF0IjoxNTIxNzE1NjMwLCJuYmYiOjE1MjE3MTU2MzAsImV4cCI6MTUyMTcxNjIzMCwic3ViIjoiIiwic2NvcGVzIjpbImRlZmF1bHQiXX0.QoEDeNe1Kun8omOCG8Nhd88Q4i7zxr8O_h1mI-v3mX-3VottqSHhIMMuOrKCC9S4bye14u1EUDLKnKI20o08Ugg-B5tkkOWiRm-4C-gy7IWp0W1XSZh9EQM8vjYGJWGomR3Sb6UvQ59_KegU5YK510dXA6pD4a6qEb9pVRgFXCjuNYxe_E-QQAK4j18AFig6-9rMt54ywAZtHsDAeg9AsG3fspk7s-7gAWCS43knVw8RusnDq1ZTxlp9-k0nDSW7O7eMNYW39xztij2Q3ONerfHk6_dBH65gYzkqSuqXM8Cd3Y-lVL2CixaqgnDJTjEk7iEwmErfE9posxGkoXgr9w",
+                "tokenType": "Bearer",
+                "addTokenTo": "header"
+              }
+            },
+            "method": "DELETE",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "url": "{{domain}}/api/{{version}}/users/id",
+            "description": "Delete a user"
+          },
+          "response": []
+        }
+      ],
+      "auth": {
+        "type": "oauth2",
+        "oauth2": {
+          "accessToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImUxN2IyZjllODk0MTU4YTM2M2ZlOTZmMGIyMDE0YTMzNmQ1MWVlNGIzMGRjMmIwZmVmOTI3ZjU4MGZlMGIxMGJkYjFjMDI3ZTgzZmM5YTcxIn0.eyJhdWQiOiI2QUMyMTFBMi1BQjEzRTg2MC04RTY0QzAxNS04QTQxNTJGOC0zNEI3MzIwRiIsImp0aSI6ImUxN2IyZjllODk0MTU4YTM2M2ZlOTZmMGIyMDE0YTMzNmQ1MWVlNGIzMGRjMmIwZmVmOTI3ZjU4MGZlMGIxMGJkYjFjMDI3ZTgzZmM5YTcxIiwiaWF0IjoxNTIxNzE1NjMwLCJuYmYiOjE1MjE3MTU2MzAsImV4cCI6MTUyMTcxNjIzMCwic3ViIjoiIiwic2NvcGVzIjpbImRlZmF1bHQiXX0.QoEDeNe1Kun8omOCG8Nhd88Q4i7zxr8O_h1mI-v3mX-3VottqSHhIMMuOrKCC9S4bye14u1EUDLKnKI20o08Ugg-B5tkkOWiRm-4C-gy7IWp0W1XSZh9EQM8vjYGJWGomR3Sb6UvQ59_KegU5YK510dXA6pD4a6qEb9pVRgFXCjuNYxe_E-QQAK4j18AFig6-9rMt54ywAZtHsDAeg9AsG3fspk7s-7gAWCS43knVw8RusnDq1ZTxlp9-k0nDSW7O7eMNYW39xztij2Q3ONerfHk6_dBH65gYzkqSuqXM8Cd3Y-lVL2CixaqgnDJTjEk7iEwmErfE9posxGkoXgr9w",
+          "tokenType": "Bearer",
+          "addTokenTo": "header"
+        }
+      },
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "id": "e4ba1ce8-d740-48e7-b4f8-7153c31dbcb5",
+            "type": "text/javascript",
+            "exec": [
+              ""
+            ]
+          }
+        },
+        {
+          "listen": "test",
+          "script": {
+            "id": "42e2867c-ce67-4f5f-9a29-33b5d3267618",
+            "type": "text/javascript",
+            "exec": [
+              ""
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "_postman_id": "c5826df0-2544-4021-a9ce-e25b5153a41c",
+      "name": "Roles",
+      "description": null,
+      "item": [
+        {
+          "_postman_id": "1da9c8aa-428f-4f14-9b2c-2f7b379b4bf7",
+          "name": "roles",
+          "request": {
+            "auth": {
+              "type": "oauth2",
+              "oauth2": {
+                "accessToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImJlMDQyMGIwM2JmZjc1NDQ4ZTFiNzhmZDVhZmZlOTA0OTMyYjZkMTdhMjk0NTU0ZmY2YTkwM2VjMzhjZmQ0ZGIxZDRjYTAxOWI0YWM0ZDBjIn0.eyJhdWQiOiI2QUMyMTFBMi1BQjEzRTg2MC04RTY0QzAxNS04QTQxNTJGOC0zNEI3MzIwRiIsImp0aSI6ImJlMDQyMGIwM2JmZjc1NDQ4ZTFiNzhmZDVhZmZlOTA0OTMyYjZkMTdhMjk0NTU0ZmY2YTkwM2VjMzhjZmQ0ZGIxZDRjYTAxOWI0YWM0ZDBjIiwiaWF0IjoxNTIxNzE0MTUxLCJuYmYiOjE1MjE3MTQxNTEsImV4cCI6MTUyMTcxNDc1MSwic3ViIjoiIiwic2NvcGVzIjpbImRlZmF1bHQiXX0.izkMedOYTIjGs_5gXq59nBPB-gHgJMpt1eJg2B7gu3WJPnXJwnTNAfIxvbsS4wzKje3xDpfs5nXL8TI_OOIWejwEVN5kpGG4e9-45RFYn6YG3E44LwCEclI2maHtUyIIj6EPm_5gsfHBdRj8E_yX8IYbw3A53FAxd83LCW0JJDWreUtzwHprbxDGhjAZ1mJKVu-7AJSa4eyWk1In9VhW8O5W4xvYYrwdOE2LvxOg0ZhKgZsJUjUZkdGQRoIJRw9k0w8XZLZfEETm6i1gBbKE-Z3Pt-HxuczCyltrW3sS9DnKPmK43OoHC_kl_XdLguveqyKiJdwNW3gHnYnIujuaoQ",
+                "tokenType": "Bearer",
+                "addTokenTo": "header"
+              }
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/x-www-form-urlencoded"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "url": "{{domain}}/api/{{version}}/roles",
+            "description": "Roles data"
+          },
+          "response": [
+            {
+              "id": "5913fc55-f9fb-40cc-93de-c7950d49374b",
+              "name": "roles",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/x-www-form-urlencoded",
+                    "disabled": false
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": ""
+                },
+                "url": "{{domain}}/api/{{version}}/roles"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache, must-revalidate",
+                  "name": "Cache-Control",
+                  "description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive",
+                  "name": "Connection",
+                  "description": "Options that are desired for the connection"
+                },
+                {
+                  "key": "Content-Encoding",
+                  "value": "gzip",
+                  "name": "Content-Encoding",
+                  "description": "The type of encoding used on the data."
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "name": "Content-Type",
+                  "description": "The mime type of this content"
+                },
+                {
+                  "key": "Date",
+                  "value": "Thu, 22 Mar 2018 14:58:17 GMT",
+                  "name": "Date",
+                  "description": "The date and time that the message was sent"
+                },
+                {
+                  "key": "Expires",
+                  "value": "Sun, 19 Nov 1978 05:00:00 GMT",
+                  "name": "Expires",
+                  "description": "Gives the date/time after which the response is considered stale"
+                },
+                {
+                  "key": "Referrer-Policy",
+                  "value": "no-referrer-when-downgrade",
+                  "name": "Referrer-Policy",
+                  "description": "Custom header"
+                },
+                {
+                  "key": "Server",
+                  "value": "nginx",
+                  "name": "Server",
+                  "description": "A name for the server"
+                },
+                {
+                  "key": "Strict-Transport-Security",
+                  "value": "max-age=31536000",
+                  "name": "Strict-Transport-Security",
+                  "description": "A HSTS Policy informing the HTTP client how long to cache the HTTPS only policy and whether this applies to subdomains."
+                },
+                {
+                  "key": "Transfer-Encoding",
+                  "value": "chunked",
+                  "name": "Transfer-Encoding",
+                  "description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff",
+                  "name": "X-Content-Type-Options",
+                  "description": "The only defined value, \"nosniff\", prevents Internet Explorer from MIME-sniffing a response away from the declared content-type"
+                },
+                {
+                  "key": "X-UA-Compatible",
+                  "value": "IE=edge",
+                  "name": "X-UA-Compatible",
+                  "description": "Custom header"
+                },
+                {
+                  "key": "X-XSS-Protection",
+                  "value": "1; mode=block",
+                  "name": "X-XSS-Protection",
+                  "description": "Cross-site scripting (XSS) filter"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"links\": {\n        \"self\": \"/api/v1/roles\"\n    },\n    \"data\": [\n        {\n            \"rid\": \"2\",\n            \"name\": \"Student\"\n        },\n        {\n            \"rid\": \"3\",\n            \"name\": \"Support\"\n        },\n        {\n            \"rid\": \"4\",\n            \"name\": \"Teacher\"\n        }\n    ]\n}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "_postman_id": "46b191a7-66eb-4fcc-8e36-093a7d31341b",
+      "name": "Classes",
+      "description": null,
+      "item": [
+        {
+          "_postman_id": "7ac909df-7cd0-4472-a1e8-3d32ffa8c402",
+          "name": "classes",
+          "request": {
+            "auth": {
+              "type": "oauth2",
+              "oauth2": {
+                "accessToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6Ijg1Yzc1Zjc0ZmZkMjNlNTgwNWM3MDE1NWQ2MWZhZDIwYjJiZDlmMTJhZDVhZDBlNWZmNmZhN2ZhN2YzZWZjNmU0Y2FlNjVkNWEyMGRjODFjIn0.eyJhdWQiOiI2QUMyMTFBMi1BQjEzRTg2MC04RTY0QzAxNS04QTQxNTJGOC0zNEI3MzIwRiIsImp0aSI6Ijg1Yzc1Zjc0ZmZkMjNlNTgwNWM3MDE1NWQ2MWZhZDIwYjJiZDlmMTJhZDVhZDBlNWZmNmZhN2ZhN2YzZWZjNmU0Y2FlNjVkNWEyMGRjODFjIiwiaWF0IjoxNTIxNzE0OTA3LCJuYmYiOjE1MjE3MTQ5MDcsImV4cCI6MTUyMTcxNTUwNywic3ViIjoiIiwic2NvcGVzIjpbImRlZmF1bHQiXX0.WFci3Q84SziEEz2Xv3KLoPuoxMjPEt9LQ_tSjSDSEEoYtyQrKRNKzA_C_ZzWvWfH-ubW6YAnrQuPH_u7x6DZrfa_64OpzCF85nXPY8Ll_LzyZGLPQJ8DB-OYIujO8A8Rokv2TpCi-TXN4HYLnTIOGwD2x4uiuSbeFF5uI5279vYkN5zCeCSarTbrWFSmaQPxUUpimonFlmRWOtg9ntV40OI0Y2jcBrtkSfjSQlatYPxo1Lj8ON_rGzIOqOGmUYuhZGCPb0arcodcvgUkpo7I7HZ1obuYFKCHtTl73oMcYEh1RVxvMx_T5Rl2OMQTrjpwE2mnqpkNywoWE4THBjk3nA",
+                "tokenType": "Bearer",
+                "addTokenTo": "header"
+              }
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "data[name]",
+                  "value": "API class",
+                  "type": "text"
+                }
+              ]
+            },
+            "url": "{{domain}}/api/{{version}}/classes",
+            "description": "Create a class"
+          },
+          "response": []
+        },
+        {
+          "_postman_id": "987f1365-6906-4d61-9adb-5920f458134c",
+          "name": "classes",
+          "request": {
+            "auth": {
+              "type": "oauth2",
+              "oauth2": {
+                "accessToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6Ijg1Yzc1Zjc0ZmZkMjNlNTgwNWM3MDE1NWQ2MWZhZDIwYjJiZDlmMTJhZDVhZDBlNWZmNmZhN2ZhN2YzZWZjNmU0Y2FlNjVkNWEyMGRjODFjIn0.eyJhdWQiOiI2QUMyMTFBMi1BQjEzRTg2MC04RTY0QzAxNS04QTQxNTJGOC0zNEI3MzIwRiIsImp0aSI6Ijg1Yzc1Zjc0ZmZkMjNlNTgwNWM3MDE1NWQ2MWZhZDIwYjJiZDlmMTJhZDVhZDBlNWZmNmZhN2ZhN2YzZWZjNmU0Y2FlNjVkNWEyMGRjODFjIiwiaWF0IjoxNTIxNzE0OTA3LCJuYmYiOjE1MjE3MTQ5MDcsImV4cCI6MTUyMTcxNTUwNywic3ViIjoiIiwic2NvcGVzIjpbImRlZmF1bHQiXX0.WFci3Q84SziEEz2Xv3KLoPuoxMjPEt9LQ_tSjSDSEEoYtyQrKRNKzA_C_ZzWvWfH-ubW6YAnrQuPH_u7x6DZrfa_64OpzCF85nXPY8Ll_LzyZGLPQJ8DB-OYIujO8A8Rokv2TpCi-TXN4HYLnTIOGwD2x4uiuSbeFF5uI5279vYkN5zCeCSarTbrWFSmaQPxUUpimonFlmRWOtg9ntV40OI0Y2jcBrtkSfjSQlatYPxo1Lj8ON_rGzIOqOGmUYuhZGCPb0arcodcvgUkpo7I7HZ1obuYFKCHtTl73oMcYEh1RVxvMx_T5Rl2OMQTrjpwE2mnqpkNywoWE4THBjk3nA",
+                "tokenType": "Bearer",
+                "addTokenTo": "header"
+              }
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/x-www-form-urlencoded"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "data[mail]",
+                  "value": "mailexample@example.com",
+                  "type": "text"
+                },
+                {
+                  "key": "data[name]",
+                  "value": "apitestuser",
+                  "type": "text"
+                }
+              ]
+            },
+            "url": "{{domain}}/api/{{version}}/classes",
+            "description": "Classes list"
+          },
+          "response": [
+            {
+              "id": "f3602cca-7f0b-4920-9bc8-68a4082c83ba",
+              "name": "classes",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/x-www-form-urlencoded",
+                    "disabled": false
+                  }
+                ],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "data[mail]",
+                      "value": "mailexample@example.com",
+                      "type": "text"
+                    },
+                    {
+                      "key": "data[name]",
+                      "value": "apitestuser",
+                      "type": "text"
+                    }
+                  ]
+                },
+                "url": "{{domain}}/api/{{version}}/classes"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache, must-revalidate",
+                  "name": "Cache-Control",
+                  "description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive",
+                  "name": "Connection",
+                  "description": "Options that are desired for the connection"
+                },
+                {
+                  "key": "Content-Encoding",
+                  "value": "gzip",
+                  "name": "Content-Encoding",
+                  "description": "The type of encoding used on the data."
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "name": "Content-Type",
+                  "description": "The mime type of this content"
+                },
+                {
+                  "key": "Date",
+                  "value": "Thu, 22 Mar 2018 14:59:24 GMT",
+                  "name": "Date",
+                  "description": "The date and time that the message was sent"
+                },
+                {
+                  "key": "Expires",
+                  "value": "Sun, 19 Nov 1978 05:00:00 GMT",
+                  "name": "Expires",
+                  "description": "Gives the date/time after which the response is considered stale"
+                },
+                {
+                  "key": "Referrer-Policy",
+                  "value": "no-referrer-when-downgrade",
+                  "name": "Referrer-Policy",
+                  "description": "Custom header"
+                },
+                {
+                  "key": "Server",
+                  "value": "nginx",
+                  "name": "Server",
+                  "description": "A name for the server"
+                },
+                {
+                  "key": "Strict-Transport-Security",
+                  "value": "max-age=31536000",
+                  "name": "Strict-Transport-Security",
+                  "description": "A HSTS Policy informing the HTTP client how long to cache the HTTPS only policy and whether this applies to subdomains."
+                },
+                {
+                  "key": "Transfer-Encoding",
+                  "value": "chunked",
+                  "name": "Transfer-Encoding",
+                  "description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff",
+                  "name": "X-Content-Type-Options",
+                  "description": "The only defined value, \"nosniff\", prevents Internet Explorer from MIME-sniffing a response away from the declared content-type"
+                },
+                {
+                  "key": "X-UA-Compatible",
+                  "value": "IE=edge",
+                  "name": "X-UA-Compatible",
+                  "description": "Custom header"
+                },
+                {
+                  "key": "X-XSS-Protection",
+                  "value": "1; mode=block",
+                  "name": "X-XSS-Protection",
+                  "description": "Cross-site scripting (XSS) filter"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"links\": {\n        \"self\": \"/api/v1/classes\"\n    },\n    \"data\": [\n        {\n            \"tid\": \"3\",\n            \"name\": \"API test class\"\n        },\n        {\n            \"tid\": \"4\",\n            \"name\": \"Basic\"\n        }\n    ],\n    \"meta\": {\n        \"totalPages\": 1\n    }\n}"
+            }
+          ]
+        },
+        {
+          "_postman_id": "d76c65fb-4c6b-48cd-826b-7a67beedd6bd",
+          "name": "classes/:id",
+          "request": {
+            "auth": {
+              "type": "oauth2",
+              "oauth2": {
+                "accessToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImUxN2IyZjllODk0MTU4YTM2M2ZlOTZmMGIyMDE0YTMzNmQ1MWVlNGIzMGRjMmIwZmVmOTI3ZjU4MGZlMGIxMGJkYjFjMDI3ZTgzZmM5YTcxIn0.eyJhdWQiOiI2QUMyMTFBMi1BQjEzRTg2MC04RTY0QzAxNS04QTQxNTJGOC0zNEI3MzIwRiIsImp0aSI6ImUxN2IyZjllODk0MTU4YTM2M2ZlOTZmMGIyMDE0YTMzNmQ1MWVlNGIzMGRjMmIwZmVmOTI3ZjU4MGZlMGIxMGJkYjFjMDI3ZTgzZmM5YTcxIiwiaWF0IjoxNTIxNzE1NjMwLCJuYmYiOjE1MjE3MTU2MzAsImV4cCI6MTUyMTcxNjIzMCwic3ViIjoiIiwic2NvcGVzIjpbImRlZmF1bHQiXX0.QoEDeNe1Kun8omOCG8Nhd88Q4i7zxr8O_h1mI-v3mX-3VottqSHhIMMuOrKCC9S4bye14u1EUDLKnKI20o08Ugg-B5tkkOWiRm-4C-gy7IWp0W1XSZh9EQM8vjYGJWGomR3Sb6UvQ59_KegU5YK510dXA6pD4a6qEb9pVRgFXCjuNYxe_E-QQAK4j18AFig6-9rMt54ywAZtHsDAeg9AsG3fspk7s-7gAWCS43knVw8RusnDq1ZTxlp9-k0nDSW7O7eMNYW39xztij2Q3ONerfHk6_dBH65gYzkqSuqXM8Cd3Y-lVL2CixaqgnDJTjEk7iEwmErfE9posxGkoXgr9w",
+                "tokenType": "Bearer",
+                "addTokenTo": "header"
+              }
+            },
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "url": "{{domain}}/api/{{version}}/classes/id",
+            "description": "Get class data"
+          },
+          "response": [
+            {
+              "id": "6591d04e-f1df-4176-8c3c-e180cebde694",
+              "name": "classes/:id",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": ""
+                },
+                "url": "{{domain}}/api/{{version}}/classes/3508"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache, must-revalidate",
+                  "name": "Cache-Control",
+                  "description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive",
+                  "name": "Connection",
+                  "description": "Options that are desired for the connection"
+                },
+                {
+                  "key": "Content-Encoding",
+                  "value": "gzip",
+                  "name": "Content-Encoding",
+                  "description": "The type of encoding used on the data."
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "name": "Content-Type",
+                  "description": "The mime type of this content"
+                },
+                {
+                  "key": "Date",
+                  "value": "Thu, 22 Mar 2018 15:00:17 GMT",
+                  "name": "Date",
+                  "description": "The date and time that the message was sent"
+                },
+                {
+                  "key": "Expires",
+                  "value": "Sun, 19 Nov 1978 05:00:00 GMT",
+                  "name": "Expires",
+                  "description": "Gives the date/time after which the response is considered stale"
+                },
+                {
+                  "key": "Referrer-Policy",
+                  "value": "no-referrer-when-downgrade",
+                  "name": "Referrer-Policy",
+                  "description": "Custom header"
+                },
+                {
+                  "key": "Server",
+                  "value": "nginx",
+                  "name": "Server",
+                  "description": "A name for the server"
+                },
+                {
+                  "key": "Strict-Transport-Security",
+                  "value": "max-age=31536000",
+                  "name": "Strict-Transport-Security",
+                  "description": "A HSTS Policy informing the HTTP client how long to cache the HTTPS only policy and whether this applies to subdomains."
+                },
+                {
+                  "key": "Transfer-Encoding",
+                  "value": "chunked",
+                  "name": "Transfer-Encoding",
+                  "description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff",
+                  "name": "X-Content-Type-Options",
+                  "description": "The only defined value, \"nosniff\", prevents Internet Explorer from MIME-sniffing a response away from the declared content-type"
+                },
+                {
+                  "key": "X-UA-Compatible",
+                  "value": "IE=edge",
+                  "name": "X-UA-Compatible",
+                  "description": "Custom header"
+                },
+                {
+                  "key": "X-XSS-Protection",
+                  "value": "1; mode=block",
+                  "name": "X-XSS-Protection",
+                  "description": "Cross-site scripting (XSS) filter"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"links\": {\n        \"self\": \"/api/v1/classes/3\",\n        \"related\": \"/api/v1/classes\"\n    },\n    \"data\": {\n        \"tid\": \"3\",\n        \"name\": \"API test class\"\n    }\n}"
+            }
+          ]
+        },
+        {
+          "_postman_id": "34ab5c5e-9698-452c-a38d-4caff7ac7392",
+          "name": "classes/:id",
+          "request": {
+            "auth": {
+              "type": "oauth2",
+              "oauth2": {
+                "accessToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6Ijg1Yzc1Zjc0ZmZkMjNlNTgwNWM3MDE1NWQ2MWZhZDIwYjJiZDlmMTJhZDVhZDBlNWZmNmZhN2ZhN2YzZWZjNmU0Y2FlNjVkNWEyMGRjODFjIn0.eyJhdWQiOiI2QUMyMTFBMi1BQjEzRTg2MC04RTY0QzAxNS04QTQxNTJGOC0zNEI3MzIwRiIsImp0aSI6Ijg1Yzc1Zjc0ZmZkMjNlNTgwNWM3MDE1NWQ2MWZhZDIwYjJiZDlmMTJhZDVhZDBlNWZmNmZhN2ZhN2YzZWZjNmU0Y2FlNjVkNWEyMGRjODFjIiwiaWF0IjoxNTIxNzE0OTA3LCJuYmYiOjE1MjE3MTQ5MDcsImV4cCI6MTUyMTcxNTUwNywic3ViIjoiIiwic2NvcGVzIjpbImRlZmF1bHQiXX0.WFci3Q84SziEEz2Xv3KLoPuoxMjPEt9LQ_tSjSDSEEoYtyQrKRNKzA_C_ZzWvWfH-ubW6YAnrQuPH_u7x6DZrfa_64OpzCF85nXPY8Ll_LzyZGLPQJ8DB-OYIujO8A8Rokv2TpCi-TXN4HYLnTIOGwD2x4uiuSbeFF5uI5279vYkN5zCeCSarTbrWFSmaQPxUUpimonFlmRWOtg9ntV40OI0Y2jcBrtkSfjSQlatYPxo1Lj8ON_rGzIOqOGmUYuhZGCPb0arcodcvgUkpo7I7HZ1obuYFKCHtTl73oMcYEh1RVxvMx_T5Rl2OMQTrjpwE2mnqpkNywoWE4THBjk3nA",
+                "tokenType": "Bearer",
+                "addTokenTo": "header"
+              }
+            },
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/x-www-form-urlencoded"
+              }
+            ],
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": [
+                {
+                  "key": "data[name]",
+                  "value": "API class",
+                  "type": "text"
+                }
+              ]
+            },
+            "url": "{{domain}}/api/{{version}}/classes/id",
+            "description": "Update a class"
+          },
+          "response": []
+        },
+        {
+          "_postman_id": "835402ae-7f4b-47df-bfb1-243e2ea4691b",
+          "name": "classes/:id",
+          "request": {
+            "auth": {
+              "type": "oauth2",
+              "oauth2": {
+                "accessToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6Ijg1Yzc1Zjc0ZmZkMjNlNTgwNWM3MDE1NWQ2MWZhZDIwYjJiZDlmMTJhZDVhZDBlNWZmNmZhN2ZhN2YzZWZjNmU0Y2FlNjVkNWEyMGRjODFjIn0.eyJhdWQiOiI2QUMyMTFBMi1BQjEzRTg2MC04RTY0QzAxNS04QTQxNTJGOC0zNEI3MzIwRiIsImp0aSI6Ijg1Yzc1Zjc0ZmZkMjNlNTgwNWM3MDE1NWQ2MWZhZDIwYjJiZDlmMTJhZDVhZDBlNWZmNmZhN2ZhN2YzZWZjNmU0Y2FlNjVkNWEyMGRjODFjIiwiaWF0IjoxNTIxNzE0OTA3LCJuYmYiOjE1MjE3MTQ5MDcsImV4cCI6MTUyMTcxNTUwNywic3ViIjoiIiwic2NvcGVzIjpbImRlZmF1bHQiXX0.WFci3Q84SziEEz2Xv3KLoPuoxMjPEt9LQ_tSjSDSEEoYtyQrKRNKzA_C_ZzWvWfH-ubW6YAnrQuPH_u7x6DZrfa_64OpzCF85nXPY8Ll_LzyZGLPQJ8DB-OYIujO8A8Rokv2TpCi-TXN4HYLnTIOGwD2x4uiuSbeFF5uI5279vYkN5zCeCSarTbrWFSmaQPxUUpimonFlmRWOtg9ntV40OI0Y2jcBrtkSfjSQlatYPxo1Lj8ON_rGzIOqOGmUYuhZGCPb0arcodcvgUkpo7I7HZ1obuYFKCHtTl73oMcYEh1RVxvMx_T5Rl2OMQTrjpwE2mnqpkNywoWE4THBjk3nA",
+                "tokenType": "Bearer",
+                "addTokenTo": "header"
+              }
+            },
+            "method": "DELETE",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "url": "{{domain}}/api/{{version}}/classes/id",
+            "description": "Delete a class"
+          },
+          "response": []
+        },
+        {
+          "_postman_id": "af32c344-d432-430d-bd7e-cb9dfe1b68e2",
+          "name": "users/:id/classes",
+          "request": {
+            "auth": {
+              "type": "oauth2",
+              "oauth2": {
+                "accessToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6Ijg1Yzc1Zjc0ZmZkMjNlNTgwNWM3MDE1NWQ2MWZhZDIwYjJiZDlmMTJhZDVhZDBlNWZmNmZhN2ZhN2YzZWZjNmU0Y2FlNjVkNWEyMGRjODFjIn0.eyJhdWQiOiI2QUMyMTFBMi1BQjEzRTg2MC04RTY0QzAxNS04QTQxNTJGOC0zNEI3MzIwRiIsImp0aSI6Ijg1Yzc1Zjc0ZmZkMjNlNTgwNWM3MDE1NWQ2MWZhZDIwYjJiZDlmMTJhZDVhZDBlNWZmNmZhN2ZhN2YzZWZjNmU0Y2FlNjVkNWEyMGRjODFjIiwiaWF0IjoxNTIxNzE0OTA3LCJuYmYiOjE1MjE3MTQ5MDcsImV4cCI6MTUyMTcxNTUwNywic3ViIjoiIiwic2NvcGVzIjpbImRlZmF1bHQiXX0.WFci3Q84SziEEz2Xv3KLoPuoxMjPEt9LQ_tSjSDSEEoYtyQrKRNKzA_C_ZzWvWfH-ubW6YAnrQuPH_u7x6DZrfa_64OpzCF85nXPY8Ll_LzyZGLPQJ8DB-OYIujO8A8Rokv2TpCi-TXN4HYLnTIOGwD2x4uiuSbeFF5uI5279vYkN5zCeCSarTbrWFSmaQPxUUpimonFlmRWOtg9ntV40OI0Y2jcBrtkSfjSQlatYPxo1Lj8ON_rGzIOqOGmUYuhZGCPb0arcodcvgUkpo7I7HZ1obuYFKCHtTl73oMcYEh1RVxvMx_T5Rl2OMQTrjpwE2mnqpkNywoWE4THBjk3nA",
+                "tokenType": "Bearer",
+                "addTokenTo": "header"
+              }
+            },
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "url": "{{domain}}/api/{{version}}/users/id/classes",
+            "description": "Get user classes"
+          },
+          "response": [
+            {
+              "id": "d238d433-37d4-44f4-b335-8b0fa24df93b",
+              "name": "users/:id/classes",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": ""
+                },
+                "url": "{{domain}}/api/{{version}}/users/25089/classes"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache, must-revalidate",
+                  "name": "Cache-Control",
+                  "description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive",
+                  "name": "Connection",
+                  "description": "Options that are desired for the connection"
+                },
+                {
+                  "key": "Content-Encoding",
+                  "value": "gzip",
+                  "name": "Content-Encoding",
+                  "description": "The type of encoding used on the data."
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "name": "Content-Type",
+                  "description": "The mime type of this content"
+                },
+                {
+                  "key": "Date",
+                  "value": "Thu, 22 Mar 2018 15:00:50 GMT",
+                  "name": "Date",
+                  "description": "The date and time that the message was sent"
+                },
+                {
+                  "key": "Expires",
+                  "value": "Sun, 19 Nov 1978 05:00:00 GMT",
+                  "name": "Expires",
+                  "description": "Gives the date/time after which the response is considered stale"
+                },
+                {
+                  "key": "Referrer-Policy",
+                  "value": "no-referrer-when-downgrade",
+                  "name": "Referrer-Policy",
+                  "description": "Custom header"
+                },
+                {
+                  "key": "Server",
+                  "value": "nginx",
+                  "name": "Server",
+                  "description": "A name for the server"
+                },
+                {
+                  "key": "Strict-Transport-Security",
+                  "value": "max-age=31536000",
+                  "name": "Strict-Transport-Security",
+                  "description": "A HSTS Policy informing the HTTP client how long to cache the HTTPS only policy and whether this applies to subdomains."
+                },
+                {
+                  "key": "Transfer-Encoding",
+                  "value": "chunked",
+                  "name": "Transfer-Encoding",
+                  "description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff",
+                  "name": "X-Content-Type-Options",
+                  "description": "The only defined value, \"nosniff\", prevents Internet Explorer from MIME-sniffing a response away from the declared content-type"
+                },
+                {
+                  "key": "X-UA-Compatible",
+                  "value": "IE=edge",
+                  "name": "X-UA-Compatible",
+                  "description": "Custom header"
+                },
+                {
+                  "key": "X-XSS-Protection",
+                  "value": "1; mode=block",
+                  "name": "X-XSS-Protection",
+                  "description": "Cross-site scripting (XSS) filter"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"links\": {\n        \"self\": \"/api/v1/users/11/classes\"\n    },\n    \"data\": [\n        \"3\"\n    ]\n}"
+            }
+          ]
+        },
+        {
+          "_postman_id": "9f997016-92ff-4fae-9a2c-33dfef6dfc2d",
+          "name": "users/:id/classes",
+          "request": {
+            "auth": {
+              "type": "oauth2",
+              "oauth2": {
+                "accessToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6Ijg1Yzc1Zjc0ZmZkMjNlNTgwNWM3MDE1NWQ2MWZhZDIwYjJiZDlmMTJhZDVhZDBlNWZmNmZhN2ZhN2YzZWZjNmU0Y2FlNjVkNWEyMGRjODFjIn0.eyJhdWQiOiI2QUMyMTFBMi1BQjEzRTg2MC04RTY0QzAxNS04QTQxNTJGOC0zNEI3MzIwRiIsImp0aSI6Ijg1Yzc1Zjc0ZmZkMjNlNTgwNWM3MDE1NWQ2MWZhZDIwYjJiZDlmMTJhZDVhZDBlNWZmNmZhN2ZhN2YzZWZjNmU0Y2FlNjVkNWEyMGRjODFjIiwiaWF0IjoxNTIxNzE0OTA3LCJuYmYiOjE1MjE3MTQ5MDcsImV4cCI6MTUyMTcxNTUwNywic3ViIjoiIiwic2NvcGVzIjpbImRlZmF1bHQiXX0.WFci3Q84SziEEz2Xv3KLoPuoxMjPEt9LQ_tSjSDSEEoYtyQrKRNKzA_C_ZzWvWfH-ubW6YAnrQuPH_u7x6DZrfa_64OpzCF85nXPY8Ll_LzyZGLPQJ8DB-OYIujO8A8Rokv2TpCi-TXN4HYLnTIOGwD2x4uiuSbeFF5uI5279vYkN5zCeCSarTbrWFSmaQPxUUpimonFlmRWOtg9ntV40OI0Y2jcBrtkSfjSQlatYPxo1Lj8ON_rGzIOqOGmUYuhZGCPb0arcodcvgUkpo7I7HZ1obuYFKCHtTl73oMcYEh1RVxvMx_T5Rl2OMQTrjpwE2mnqpkNywoWE4THBjk3nA",
+                "tokenType": "Bearer",
+                "addTokenTo": "header"
+              }
+            },
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/x-www-form-urlencoded"
+              }
+            ],
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": [
+                {
+                  "key": "data[classes][0]",
+                  "value": "id",
+                  "type": "text"
+                }
+              ]
+            },
+            "url": "{{domain}}/api/{{version}}/users/id/classes",
+            "description": "Update user classes"
+          },
+          "response": []
+        }
+      ]
+    }
+  ],
+  "auth": {
+    "type": "oauth2",
+    "oauth2": {
+      "accessToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImUxN2IyZjllODk0MTU4YTM2M2ZlOTZmMGIyMDE0YTMzNmQ1MWVlNGIzMGRjMmIwZmVmOTI3ZjU4MGZlMGIxMGJkYjFjMDI3ZTgzZmM5YTcxIn0.eyJhdWQiOiI2QUMyMTFBMi1BQjEzRTg2MC04RTY0QzAxNS04QTQxNTJGOC0zNEI3MzIwRiIsImp0aSI6ImUxN2IyZjllODk0MTU4YTM2M2ZlOTZmMGIyMDE0YTMzNmQ1MWVlNGIzMGRjMmIwZmVmOTI3ZjU4MGZlMGIxMGJkYjFjMDI3ZTgzZmM5YTcxIiwiaWF0IjoxNTIxNzE1NjMwLCJuYmYiOjE1MjE3MTU2MzAsImV4cCI6MTUyMTcxNjIzMCwic3ViIjoiIiwic2NvcGVzIjpbImRlZmF1bHQiXX0.QoEDeNe1Kun8omOCG8Nhd88Q4i7zxr8O_h1mI-v3mX-3VottqSHhIMMuOrKCC9S4bye14u1EUDLKnKI20o08Ugg-B5tkkOWiRm-4C-gy7IWp0W1XSZh9EQM8vjYGJWGomR3Sb6UvQ59_KegU5YK510dXA6pD4a6qEb9pVRgFXCjuNYxe_E-QQAK4j18AFig6-9rMt54ywAZtHsDAeg9AsG3fspk7s-7gAWCS43knVw8RusnDq1ZTxlp9-k0nDSW7O7eMNYW39xztij2Q3ONerfHk6_dBH65gYzkqSuqXM8Cd3Y-lVL2CixaqgnDJTjEk7iEwmErfE9posxGkoXgr9w",
+      "tokenType": "Bearer",
+      "addTokenTo": "header"
+    }
+  },
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "id": "4388177e-87e4-4c58-b3f9-cde3fedfc4a9",
+        "type": "text/javascript",
+        "exec": [
+          ""
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "id": "f896629b-55be-4622-87ac-a0e8b16943ef",
+        "type": "text/javascript",
+        "exec": [
+          ""
+        ]
+      }
+    }
+  ]
+}
