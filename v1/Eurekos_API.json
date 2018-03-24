@@ -691,8 +691,8 @@
     },
     {
       "_postman_id": "46b191a7-66eb-4fcc-8e36-093a7d31341b",
-      "name": "Classes",
-      "description": null,
+      "name": "Classes (deprecated)",
+      "description": "",
       "item": [
         {
           "_postman_id": "7ac909df-7cd0-4472-a1e8-3d32ffa8c402",
@@ -1215,6 +1215,28 @@
             "description": "Update user classes"
           },
           "response": []
+        }
+      ],
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "id": "eb794d77-f5fa-43c5-9835-6a0ab15e6714",
+            "type": "text/javascript",
+            "exec": [
+              ""
+            ]
+          }
+        },
+        {
+          "listen": "test",
+          "script": {
+            "id": "d7889aa7-8415-4b12-a595-e9206d30bdd9",
+            "type": "text/javascript",
+            "exec": [
+              ""
+            ]
+          }
         }
       ]
     },
