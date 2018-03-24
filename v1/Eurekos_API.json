@@ -145,7 +145,7 @@
             "method": "GET",
             "header": [],
             "body": {},
-            "url": "{{domain}}/api/{{version}}/courses/3631/description",
+            "url": "{{domain}}/api/{{version}}/courses/id/description",
             "description": "Course description data"
           },
           "response": []
