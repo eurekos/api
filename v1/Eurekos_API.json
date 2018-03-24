@@ -13,7 +13,7 @@
       "item": [
         {
           "_postman_id": "85ecc854-92c2-4b30-965d-46cc89e7d7f2",
-          "name": "{{domain}}/api/{{version}}/courses",
+          "name": "courses",
           "request": {
             "auth": {
               "type": "oauth2",
@@ -29,7 +29,86 @@
             "url": "{{domain}}/api/{{version}}/courses",
             "description": "List of courses"
           },
-          "response": []
+          "response": [
+            {
+              "id": "c4741959-6d39-4ece-9c6b-c0711089e532",
+              "name": "{{domain}}/api/{{version}}/courses",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "body": {},
+                "url": "{{domain}}/api/{{version}}/courses"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache, must-revalidate",
+                  "name": "Cache-Control",
+                  "description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+                },
+                {
+                  "key": "Content-Encoding",
+                  "value": "gzip",
+                  "name": "Content-Encoding",
+                  "description": "The type of encoding used on the data."
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "name": "Content-Type",
+                  "description": "The mime type of this content"
+                },
+                {
+                  "key": "Date",
+                  "value": "Sat, 24 Mar 2018 12:13:37 GMT",
+                  "name": "Date",
+                  "description": "The date and time that the message was sent"
+                },
+                {
+                  "key": "Expires",
+                  "value": "Sun, 19 Nov 1978 05:00:00 GMT",
+                  "name": "Expires",
+                  "description": "Gives the date/time after which the response is considered stale"
+                },
+                {
+                  "key": "Server",
+                  "value": "nginx/1.12.2",
+                  "name": "Server",
+                  "description": "A name for the server"
+                },
+                {
+                  "key": "Transfer-Encoding",
+                  "value": "chunked",
+                  "name": "Transfer-Encoding",
+                  "description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff",
+                  "name": "X-Content-Type-Options",
+                  "description": "The only defined value, \"nosniff\", prevents Internet Explorer from MIME-sniffing a response away from the declared content-type"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/7.0.26",
+                  "name": "X-Powered-By",
+                  "description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+                },
+                {
+                  "key": "X-UA-Compatible",
+                  "value": "IE=edge",
+                  "name": "X-UA-Compatible",
+                  "description": "Custom header"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\"data\":[{\"nid\":\"3576\",\"title\":\"Creating a course\",\"language\":\"English\",\"flag\":\"0\",\"label\":false},{\"nid\":\"3631\",\"title\":\"Nutrition: Healthy food for better living\",\"language\":\"English\",\"flag\":\"0\",\"label\":false},{\"nid\":\"3658\",\"title\":\"Effective use of lesson materials\",\"language\":\"English\",\"flag\":\"0\",\"label\":false},{\"nid\":\"3719\",\"title\":\"PRINCE2 Foundation - English\",\"language\":\"English\",\"flag\":\"0\",\"label\":false}],\"meta\":{\"totalPages\":1}}"
+            }
+          ]
         }
       ]
     },
