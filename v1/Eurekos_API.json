@@ -2,7 +2,7 @@
   "info": {
     "_postman_id": "ff5bf839-493f-4154-8361-7cb01fe11237",
     "name": "Eurekos API",
-    "description": "# Authentication\n## OAuth 2.0 authorization flow\n\nEurekos API use the OAuth 2.0 protocol for authentication and authorization. Currently only client credentials scenario is supported.\n\n### Obtaining access token\n\n`POST oauth2/token`\n\nThis method allows to obtain an OAuth access token.\n\n#### Parameters  \n| Name          | Default value            |\n| ------------- |-----------------------------------|\n| grant_type  | client_credentials        |\n| client_id     | Client ID provided by Eurekos    |\n| client_secret | Client Secret provided by Eurekos |\n| scope         | default              |",
+    "description": "# Authentication\n## OAuth 2.0 authorization flow\n\nEurekos API use the OAuth 2.0 protocol for authentication and authorization. Currently only client credentials scenario is supported.\n\n### Obtaining access token\n\n`POST oauth2/token`\n\nThis method allows to obtain an OAuth access token.\n\n#### Parameters  \n| Name          | Default value\t\t\t\t\t\t|\n| ------------- |-----------------------------------|\n| grant_type\t| client_credentials\t\t\t\t|\n| client_id     | Client ID provided by Eurekos\t\t|\n| client_secret | Client Secret provided by Eurekos |\n| scope         | default\t\t\t\t\t\t\t|",
     "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
   },
   "item": [
