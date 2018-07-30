@@ -1792,10 +1792,25 @@
           "_postman_id": "d13fd235-ba22-446c-8773-232a235ea79f",
           "name": "taxonomy_terms/:id",
           "request": {
-            "method": "GET",
-            "header": [],
-            "body": {},
-            "url": "",
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/x-www-form-urlencoded"
+              }
+            ],
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": [
+                {
+                  "key": "data",
+                  "value": "{\"name\":\"term name\",\"description\":\"text\",\"weight\":3}",
+                  "description": "",
+                  "type": "text"
+                }
+              ]
+            },
+            "url": "{{domain}}/api/v2/taxonomy_terms/{{taxonomy_term_id}}",
             "description": "Update a taxonomy term"
           },
           "response": []
