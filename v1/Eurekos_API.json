@@ -1405,6 +1405,18 @@
               "body": "{\n    \"data\": [\n        {\n            \"id\": \"2349\",\n            \"activity\": \"774\",\n            \"user\": \"39063\",\n            \"user_name\": \"Bobby Singer\",\n            \"author\": \"31947\",\n            \"author_name\": \"Iryna Kachmar\",\n            \"created\": \"26 Jul 2018 - 16:25 CEST\",\n            \"changed\": \"26 Jul 2018 - 16:25 CEST\",\n            \"status\": \"Registered\"\n        },\n        {\n            \"id\": \"2361\",\n            \"activity\": \"776\",\n            \"user\": \"25186\",\n            \"user_name\": \"Tamara Chernii\",\n            \"author\": \"25186\",\n            \"author_name\": \"Tamara Chernii\",\n            \"created\": \"26 Jul 2018 - 21:55 CEST\",\n            \"changed\": \"26 Jul 2018 - 21:55 CEST\",\n            \"status\": \"Registered\"\n        },\n        {\n            \"id\": \"2391\",\n            \"activity\": \"1\",\n            \"user\": \"1\",\n            \"user_name\": \"Nick Eriksen\",\n            \"author\": \"1\",\n            \"author_name\": \"Nick Eriksen\",\n            \"created\": \"30 Jul 2018 - 12:07 CEST\",\n            \"changed\": \"30 Jul 2018 - 12:07 CEST\",\n            \"status\": \"Registered\"\n        }\n    ],\n    \"meta\": {\n        \"totalPages\": 1\n    },\n    \"links\": {\n        \"self\": \"/api/v2/signups\"\n    }\n}"
             }
           ]
+        },
+        {
+          "_postman_id": "17370aa7-84cf-4cb9-b2a9-3c06be4cfc98",
+          "name": "signups/:id",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {},
+            "url": "",
+            "description": "Get signup by id"
+          },
+          "response": []
         }
       ]
     }
