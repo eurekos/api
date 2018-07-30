@@ -1777,7 +1777,7 @@
               "formdata": [
                 {
                   "key": "data",
-                  "value": "{\"bundle\":\"other\",\"name\":\"term name\",\"description\":\"text\"}",
+                  "value": "{\"bundle\":\"other\",\"name\":\"term name\",\"description\":\"text\",\"weight\":2}",
                   "description": "",
                   "type": "text"
                 }
