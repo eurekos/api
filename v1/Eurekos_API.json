@@ -1656,6 +1656,18 @@
             "description": "Delete an activity"
           },
           "response": []
+        },
+        {
+          "_postman_id": "8d04d546-5e4b-47ae-b523-4ad6ed68dfea",
+          "name": "activities/:id",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {},
+            "url": "",
+            "description": "Activity data"
+          },
+          "response": []
         }
       ]
     }
