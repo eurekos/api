@@ -1609,6 +1609,12 @@
           "response": []
         }
       ]
+    },
+    {
+      "_postman_id": "201ef05d-dee9-4c15-a943-fa3bdd9f807a",
+      "name": "Activities",
+      "description": "",
+      "item": []
     }
   ],
   "auth": {
