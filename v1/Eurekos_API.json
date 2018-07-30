@@ -1585,10 +1585,25 @@
           "_postman_id": "990a4bd9-93b8-435d-b745-73a3d4f03510",
           "name": "signups/:id",
           "request": {
-            "method": "GET",
-            "header": [],
-            "body": {},
-            "url": "",
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/x-www-form-urlencoded"
+              }
+            ],
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": [
+                {
+                  "key": "data",
+                  "value": "{\"author\":1,\"status\":\"Registered\"}",
+                  "description": "",
+                  "type": "text"
+                }
+              ]
+            },
+            "url": "{{domain}}/api/v2/signups/{{signup_id}}",
             "description": "Update a signup"
           },
           "response": []
