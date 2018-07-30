@@ -1693,7 +1693,20 @@
       "_postman_id": "c9815a18-6ff0-47a6-b4ad-2b0d864299e3",
       "name": "Taxonomy terms",
       "description": "",
-      "item": []
+      "item": [
+        {
+          "_postman_id": "6c277b4b-3c7e-4ab2-8aff-0503e833a43e",
+          "name": "taxonomy_terms",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {},
+            "url": "",
+            "description": "List of taxonomy terms"
+          },
+          "response": []
+        }
+      ]
     }
   ],
   "auth": {
