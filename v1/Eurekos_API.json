@@ -1429,6 +1429,134 @@
             "url": "{{domain}}/api/v2/signups/{{signup_id}}",
             "description": "Signup data"
           },
+          "response": [
+            {
+              "id": "b6779a5f-e043-4e40-9b06-05c36602fa86",
+              "name": "signups/:id",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/x-www-form-urlencode",
+                    "warning": "",
+                    "disabled": true
+                  },
+                  {
+                    "key": "",
+                    "value": "",
+                    "warning": "",
+                    "disabled": true
+                  },
+                  {
+                    "key": "",
+                    "value": "",
+                    "warning": "",
+                    "disabled": true
+                  }
+                ],
+                "body": {},
+                "url": "{{domain}}/api/v2/signups/{{signup_id}}"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache, must-revalidate",
+                  "name": "Cache-Control",
+                  "description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive",
+                  "name": "Connection",
+                  "description": "Options that are desired for the connection"
+                },
+                {
+                  "key": "Content-Encoding",
+                  "value": "gzip",
+                  "name": "Content-Encoding",
+                  "description": "The type of encoding used on the data."
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "name": "Content-Type",
+                  "description": "The mime type of this content"
+                },
+                {
+                  "key": "Date",
+                  "value": "Mon, 30 Jul 2018 18:26:36 GMT",
+                  "name": "Date",
+                  "description": "The date and time that the message was sent"
+                },
+                {
+                  "key": "Expires",
+                  "value": "Sun, 19 Nov 1978 05:00:00 GMT",
+                  "name": "Expires",
+                  "description": "Gives the date/time after which the response is considered stale"
+                },
+                {
+                  "key": "Referrer-Policy",
+                  "value": "strict-origin-when-cross-origin",
+                  "name": "Referrer-Policy",
+                  "description": "Custom header"
+                },
+                {
+                  "key": "Server",
+                  "value": "Eurekos",
+                  "name": "Server",
+                  "description": "A name for the server"
+                },
+                {
+                  "key": "Strict-Transport-Security",
+                  "value": "max-age=31536000",
+                  "name": "Strict-Transport-Security",
+                  "description": "A HSTS Policy informing the HTTP client how long to cache the HTTPS only policy and whether this applies to subdomains."
+                },
+                {
+                  "key": "Transfer-Encoding",
+                  "value": "chunked",
+                  "name": "Transfer-Encoding",
+                  "description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff",
+                  "name": "X-Content-Type-Options",
+                  "description": "The only defined value, \"nosniff\", prevents Internet Explorer from MIME-sniffing a response away from the declared content-type"
+                },
+                {
+                  "key": "X-UA-Compatible",
+                  "value": "IE=edge",
+                  "name": "X-UA-Compatible",
+                  "description": "Custom header"
+                },
+                {
+                  "key": "X-XSS-Protection",
+                  "value": "1; mode=block",
+                  "name": "X-XSS-Protection",
+                  "description": "Cross-site scripting (XSS) filter"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\"data\":{\"id\":\"2391\",\"activity\":\"1\",\"user\":\"1\",\"user_name\":\"Nick Eriksen\",\"author\":\"1\",\"author_name\":\"Nick Eriksen\",\"created\":\"30 Jul 2018 - 12:07 CEST\",\"changed\":\"30 Jul 2018 - 12:07 CEST\",\"status\":\"Registered\"}}"
+            }
+          ]
+        },
+        {
+          "_postman_id": "186b6307-d9ee-477c-948c-1978dd6bec6a",
+          "name": "signups/:id",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {},
+            "url": "",
+            "description": "Delete signup"
+          },
           "response": []
         }
       ]
