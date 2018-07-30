@@ -1271,7 +1271,19 @@
       "_postman_id": "a7b30c96-ab92-4ddf-9e01-e464ed9916cd",
       "name": "Signups",
       "description": "",
-      "item": []
+      "item": [
+        {
+          "_postman_id": "caea04d3-7126-40cc-90d7-b1a01eb2b8cb",
+          "name": "signups",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {},
+            "url": ""
+          },
+          "response": []
+        }
+      ]
     }
   ],
   "auth": {
