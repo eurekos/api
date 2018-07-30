@@ -1655,7 +1655,25 @@
             "url": "",
             "description": "Activity data"
           },
-          "response": []
+          "response": [
+            {
+              "id": "a2113344-56a0-4674-a2c4-c0ac516ece6a",
+              "name": "activities/:id",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "body": {},
+                "url": "{{domain}}/api/v2/activities/{{activity_id}}"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n  \"data\": [\n    {\n      \"id\": \"350\",\n      \"title\": \"The Bauhaus July\",\n      \"type\": \"Online\",\n      \"starts\": \"1 Jul 2018 - 00:00 CEST\",\n      \"ends\": \"31 Jul 2018 - 00:30 CEST\",\n      \"status\": \"In progress\",\n      \"seats\": \"30\",\n      \"author\": \"1\",\n      \"author_name\": \"Nick Eriksen\",\n      \"responsible\": \"36868\",\n      \"instructors\": [\n        \"30511\"\n      ],\n      \"created\": \"25 May 2018 - 13:28 CEST\",\n      \"changed\": \"30 Jul 2018 - 20:45 CEST\",\n      \"signups\": [\n        \"1755\",\n        \"1775\",\n        \"1793\",\n        \"1958\",\n        \"1960\",\n        \"1985\",\n        \"1986\"\n      ],\n      \"courses\": [\n        \"5333\"\n      ],\n      \"alert\": \"\",\n      \"certificate\": \"\",\n      \"withdrawal\": \"1 Jul 2018 - 00:00 CEST\",\n      \"deadline\": \"1 Jul 2018 - 00:00 CEST\",\n      \"store\": {\n        \"status\": true,\n        \"start\": \"01/07/2018\"\n      }\n    }\n  ],\n}"
+            }
+          ]
         },
         {
           "_postman_id": "166341d0-5a39-491a-809b-9058e9eb52ab",
@@ -1670,6 +1688,12 @@
           "response": []
         }
       ]
+    },
+    {
+      "_postman_id": "c9815a18-6ff0-47a6-b4ad-2b0d864299e3",
+      "name": "Taxonomy terms",
+      "description": "",
+      "item": []
     }
   ],
   "auth": {
