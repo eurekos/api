@@ -1734,6 +1734,36 @@
             "url": "{{domain}}/api/v2/taxonomy_terms/{{taxonomy_term_id}}",
             "description": "Taxonomy term data"
           },
+          "response": [
+            {
+              "id": "dfa824f7-458b-4d46-bdcc-9d81a5c29165",
+              "name": "taxonomy_terms/:id",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "body": {},
+                "url": "{{domain}}/api/v2/taxonomy_terms/{{taxonomy_term_id}}"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n  \"data\": [\n    {\n      \"tid\": \"4360\",\n      \"vid\": \"13\",\n      \"name\": \"Personal development\",\n      \"weight\": \"11\",\n      \"bundle\": \"Category\"\n    }\n  ]\n}"
+            }
+          ]
+        },
+        {
+          "_postman_id": "613ad146-a52e-4cf1-884c-0310994871d7",
+          "name": "taxonomy_terms/:id",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {},
+            "url": "",
+            "description": "Delete a taxonomy term"
+          },
           "response": []
         }
       ]
