@@ -1276,10 +1276,18 @@
           "_postman_id": "caea04d3-7126-40cc-90d7-b1a01eb2b8cb",
           "name": "signups",
           "request": {
+            "auth": {
+              "type": "oauth2",
+              "oauth2": {
+                "accessToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImNiOGNjYTczNzdjNTU2NmQ3NDZkZmY3YzdkZDQzYTNiYWY3ODA1ZWZkN2QxOWNmZDlhZjRhYzUxOWJkNWZiYmZmZTY5OGNhZjEzMDc3YTM5In0.eyJhdWQiOiJEMUQ4OUZERi01QkQ3M0FDRC0yMEY0QzFDQi05MEM3REFBQS01RUFBMDBENCIsImp0aSI6ImNiOGNjYTczNzdjNTU2NmQ3NDZkZmY3YzdkZDQzYTNiYWY3ODA1ZWZkN2QxOWNmZDlhZjRhYzUxOWJkNWZiYmZmZTY5OGNhZjEzMDc3YTM5IiwiaWF0IjoxNTMyODcyMzU4LCJuYmYiOjE1MzI4NzIzNTgsImV4cCI6MTUzMjg3Mjk1OCwic3ViIjoiIiwic2NvcGVzIjpbImRlZmF1bHQiXX0.PFQ_fFjMRiyjm2vX1rJTuW0gyPjouPfeR9mUSDkKJk4k3iMadtTxgdQROOa0a5ykqfnfg6nvTt1VhBRfjwXI2lijnxtCT1sLm9ze7tnZdkpt0RsHWIWnMuHPBfXWr-36Mc3ZInDIUqeama4yXWNE5OpaQ7UxIXbUpxWEY1LryjQ",
+                "tokenType": "Bearer",
+                "addTokenTo": "queryParams"
+              }
+            },
             "method": "GET",
             "header": [],
             "body": {},
-            "url": "",
+            "url": "{{domain}}/api/{{version}}/signups",
             "description": "List of signups"
           },
           "response": []
