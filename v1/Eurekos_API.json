@@ -1279,7 +1279,8 @@
             "method": "GET",
             "header": [],
             "body": {},
-            "url": ""
+            "url": "",
+            "description": "List of signups"
           },
           "response": []
         }
