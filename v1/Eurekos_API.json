@@ -1410,10 +1410,23 @@
           "_postman_id": "17370aa7-84cf-4cb9-b2a9-3c06be4cfc98",
           "name": "signups/:id",
           "request": {
+            "auth": {
+              "type": "oauth2",
+              "oauth2": {
+                "accessToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjIwNWMwMDU0MDBkOWEyNzY4ZWI1NmRiZjNhNzhhZjQ5MTkyMGVmZDVlMjk4NjgzNjkxMmY5NWI4OGFiZDlhMDIyZDUzODJlYmJhNmY0MjVjIn0.eyJhdWQiOiJEMUQ4OUZERi01QkQ3M0FDRC0yMEY0QzFDQi05MEM3REFBQS01RUFBMDBENCIsImp0aSI6IjIwNWMwMDU0MDBkOWEyNzY4ZWI1NmRiZjNhNzhhZjQ5MTkyMGVmZDVlMjk4NjgzNjkxMmY5NWI4OGFiZDlhMDIyZDUzODJlYmJhNmY0MjVjIiwiaWF0IjoxNTMyOTc0MDc4LCJuYmYiOjE1MzI5NzQwNzgsImV4cCI6MTUzMjk3NDY3OCwic3ViIjoiIiwic2NvcGVzIjpbImRlZmF1bHQiXX0.QMLU57laDlEbCOvaKG5m0s_6H9-dqKn7FrbJhO10V4u9Ec7osB0lKH4sdYhBvqvhmWC_siH4kZU7PQ0P3AgzKQg6z7GNmgLFcI8s-bj496j22h7IEmL8tuZgM8IqaryYH0wmsTN_wK2md8jB2blm9QI4-5e9bkBIQLN8q2sC0jY",
+                "tokenType": "Bearer",
+                "addTokenTo": "queryParams"
+              }
+            },
             "method": "GET",
-            "header": [],
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/x-www-form-urlencode"
+              }
+            ],
             "body": {},
-            "url": "",
+            "url": "{{domain}}/api/v2/signups/{{signup_id}}",
             "description": "Signup data"
           },
           "response": []
