@@ -1414,7 +1414,7 @@
             "header": [],
             "body": {},
             "url": "",
-            "description": "Get signup by id"
+            "description": "Signup data"
           },
           "response": []
         }
