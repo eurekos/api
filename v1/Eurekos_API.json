@@ -1787,6 +1787,18 @@
             "description": "Create a taxonomy term"
           },
           "response": []
+        },
+        {
+          "_postman_id": "d13fd235-ba22-446c-8773-232a235ea79f",
+          "name": "taxonomy_terms/:id",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {},
+            "url": "",
+            "description": "Update a taxonomy term"
+          },
+          "response": []
         }
       ]
     }
