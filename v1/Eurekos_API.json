@@ -1614,7 +1614,20 @@
       "_postman_id": "201ef05d-dee9-4c15-a943-fa3bdd9f807a",
       "name": "Activities",
       "description": "",
-      "item": []
+      "item": [
+        {
+          "_postman_id": "e4f59f29-e57f-4044-8bad-87e44a33a5df",
+          "name": "activities",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {},
+            "url": "",
+            "description": "List of activities"
+          },
+          "response": []
+        }
+      ]
     }
   ],
   "auth": {
