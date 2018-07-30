@@ -1558,6 +1558,18 @@
             "description": "Delete a signup"
           },
           "response": []
+        },
+        {
+          "_postman_id": "af64a657-c687-4a89-9c84-9b008aa6462d",
+          "name": "signups",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {},
+            "url": "",
+            "description": "Create a signup"
+          },
+          "response": []
         }
       ]
     }
