@@ -1298,7 +1298,7 @@
             ],
             "body": {},
             "url": "{{domain}}/api/v2/signups",
-            "description": "List of signups"
+            "description": "List of signups\n\nParameters: user, status, author, id (multiple), activity, page."
           },
           "response": [
             {
