@@ -1563,10 +1563,20 @@
           "_postman_id": "af64a657-c687-4a89-9c84-9b008aa6462d",
           "name": "signups",
           "request": {
-            "method": "GET",
+            "method": "POST",
             "header": [],
-            "body": {},
-            "url": "",
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "data",
+                  "value": "{\"author\":1,\"activity\":463,\"user\":4568}",
+                  "description": "",
+                  "type": "text"
+                }
+              ]
+            },
+            "url": "{{domain}}/api/v2/signups",
             "description": "Create a signup"
           },
           "response": []
