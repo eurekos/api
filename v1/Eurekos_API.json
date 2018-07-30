@@ -1555,7 +1555,7 @@
             "header": [],
             "body": {},
             "url": "",
-            "description": "Delete signup"
+            "description": "Delete a signup"
           },
           "response": []
         }
