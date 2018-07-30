@@ -1770,10 +1770,20 @@
           "_postman_id": "df2bdab1-fa2b-4541-8838-d1cbbc1e9d3b",
           "name": "taxonomy_terms",
           "request": {
-            "method": "GET",
+            "method": "POST",
             "header": [],
-            "body": {},
-            "url": "",
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "data",
+                  "value": "{\"bundle\":\"other\",\"name\":\"term name\",\"description\":\"text\"}",
+                  "description": "",
+                  "type": "text"
+                }
+              ]
+            },
+            "url": "{{domain}}/api/v2/taxonomy_terms",
             "description": "Create a taxonomy term"
           },
           "response": []
