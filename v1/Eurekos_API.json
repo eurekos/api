@@ -1653,7 +1653,7 @@
             "header": [],
             "body": {},
             "url": "",
-            "description": "Delete activity"
+            "description": "Delete an activity"
           },
           "response": []
         }
