@@ -1622,7 +1622,7 @@
             "method": "GET",
             "header": [],
             "body": {},
-            "url": "",
+            "url": "{{domain}}/api/v2/activities",
             "description": "List of activities"
           },
           "response": []
