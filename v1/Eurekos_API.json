@@ -1287,7 +1287,11 @@
             "method": "GET",
             "header": [
               {
-                "key": "",
+                "key": "Content-Type",
+                "value": "application/x-www-form-urlencode"
+              },
+              {
+                "key": "Authorization",
                 "value": "",
                 "disabled": true
               }
