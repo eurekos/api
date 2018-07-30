@@ -1704,6 +1704,36 @@
             "url": "{{domain}}/api/v2/taxonomy_terms",
             "description": "List of taxonomy terms"
           },
+          "response": [
+            {
+              "id": "b60f8f70-4bc4-403a-b468-c32f5f92b050",
+              "name": "taxonomy_terms",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "body": {},
+                "url": "{{domain}}/api/v2/taxonomy_terms"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"data\": [\n        {\n            \"tid\": \"4202\",\n            \"vid\": \"18\",\n            \"name\": \"Online\",\n            \"weight\": \"0\",\n            \"bundle\": \"Other\"\n        },\n        {\n            \"tid\": \"3461\",\n            \"vid\": \"12\",\n            \"name\": \"Food & Nutrition\",\n            \"weight\": \"0\",\n            \"description\": \"\",\n            \"bundle\": \"Job function\"\n        },\n        {\n            \"tid\": \"3462\",\n            \"vid\": \"12\",\n            \"name\": \"Data Analysis & Statistics\",\n            \"weight\": \"0\",\n            \"description\": \"\",\n            \"bundle\": \"Job function\"\n        },\n        {\n            \"tid\": \"4243\",\n            \"vid\": \"11\",\n            \"name\": \"Classroom\",\n            \"weight\": \"0\",\n            \"bundle\": \"Course type\"\n        },\n        {\n            \"tid\": \"4244\",\n            \"vid\": \"11\",\n            \"name\": \"Blended\",\n            \"weight\": \"0\",\n            \"bundle\": \"Course type\"\n        },\n        {\n            \"tid\": \"4505\",\n            \"vid\": \"13\",\n            \"name\": \"Arts & Culture\",\n            \"weight\": \"10\",\n            \"bundle\": \"Category\"\n        },\n        {\n            \"tid\": \"4360\",\n            \"vid\": \"13\",\n            \"name\": \"Personal development\",\n            \"weight\": \"11\",\n            \"bundle\": \"Category\"\n        }\n    ],\n    \"meta\": {\n        \"totalPages\": 1\n    },\n    \"links\": {\n        \"self\": \"/api/v2/taxonomy_terms\"\n    }\n}"
+            }
+          ]
+        },
+        {
+          "_postman_id": "31abb640-3a89-47a7-947d-7cc155da6d0d",
+          "name": "taxonomy_terms/:id",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {},
+            "url": "",
+            "description": "Taxonomy term data"
+          },
           "response": []
         }
       ]
