@@ -1580,6 +1580,18 @@
             "description": "Create a signup"
           },
           "response": []
+        },
+        {
+          "_postman_id": "990a4bd9-93b8-435d-b745-73a3d4f03510",
+          "name": "signups/:id",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {},
+            "url": "",
+            "description": "Update a signup"
+          },
+          "response": []
         }
       ]
     }
