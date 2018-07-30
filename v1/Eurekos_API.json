@@ -1551,10 +1551,10 @@
           "_postman_id": "186b6307-d9ee-477c-948c-1978dd6bec6a",
           "name": "signups/:id",
           "request": {
-            "method": "GET",
+            "method": "DELETE",
             "header": [],
             "body": {},
-            "url": "",
+            "url": "{{domain}}/api/v2/signups/{{signup_id}}",
             "description": "Delete a signup"
           },
           "response": []
