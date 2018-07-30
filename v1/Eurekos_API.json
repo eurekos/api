@@ -1625,6 +1625,36 @@
             "url": "{{domain}}/api/v2/activities",
             "description": "List of activities"
           },
+          "response": [
+            {
+              "id": "03a5a909-2eb5-45d6-b0ce-6238825d9e32",
+              "name": "activities",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "body": {},
+                "url": "{{domain}}/api/v2/activities"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"data\": [\n        {\n            \"id\": \"770\",\n            \"title\": \"Simplilearn\",\n            \"type\": \"Online\",\n            \"starts\": \"\",\n            \"ends\": \"\",\n            \"status\": \"Open\",\n            \"seats\": \"-1\",\n            \"author\": \"1\",\n            \"author_name\": \"Nick Eriksen\",\n            \"responsible\": \"30267\",\n            \"instructors\": [\n                \"25089\"\n            ],\n            \"created\": \"26 Jul 2018 - 08:48 CEST\",\n            \"changed\": \"30 Jul 2018 - 20:45 CEST\",\n            \"signups\": [\n                \"2310\",\n                \"2348\"\n            ],\n            \"courses\": [\n                \"21862\"\n            ],\n            \"alert\": \"\",\n            \"certificate\": \"\",\n            \"withdrawal\": \"\",\n            \"deadline\": \"\",\n            \"store\": {\n                \"status\": false,\n                \"start\": \"\"\n            }\n        },\n        {\n            \"id\": \"767\",\n            \"title\": \"CombiCourseActivity\",\n            \"type\": \"Classroom\",\n            \"starts\": \"29 Nov 2018 - 13:37 CET\",\n            \"ends\": \"29 Nov 2018 - 14:00 CET\",\n            \"status\": \"Open\",\n            \"seats\": \"5\",\n            \"author\": \"1\",\n            \"author_name\": \"Nick Eriksen\",\n            \"responsible\": \"30267\",\n            \"instructors\": [\n                \"38150\"\n            ],\n            \"created\": \"25 Jul 2018 - 13:38 CEST\",\n            \"changed\": \"30 Jul 2018 - 20:45 CEST\",\n            \"signups\": [\n                \"2297\",\n                \"2311\"\n            ],\n            \"courses\": [\n                \"21779\"\n            ],\n            \"alert\": \"\",\n            \"certificate\": \"\",\n            \"location\": \"1\",\n            \"withdrawal\": \"29 Nov 2018 - 13:37 CET\",\n            \"deadline\": \"29 Nov 2018 - 13:37 CET\",\n            \"store\": {\n                \"status\": false,\n                \"start\": \"29/11/2018\"\n            }\n        },\n        {\n            \"id\": \"350\",\n            \"title\": \"The Bauhaus July\",\n            \"type\": \"Online\",\n            \"starts\": \"1 Jul 2018 - 00:00 CEST\",\n            \"ends\": \"31 Jul 2018 - 00:30 CEST\",\n            \"status\": \"In progress\",\n            \"seats\": \"30\",\n            \"author\": \"1\",\n            \"author_name\": \"Nick Eriksen\",\n            \"responsible\": \"36868\",\n            \"instructors\": [\n                \"30511\"\n            ],\n            \"created\": \"25 May 2018 - 13:28 CEST\",\n            \"changed\": \"30 Jul 2018 - 20:45 CEST\",\n            \"signups\": [\n                \"1755\",\n                \"1775\",\n                \"1793\",\n                \"1958\",\n                \"1960\",\n                \"1985\",\n                \"1986\"\n            ],\n            \"courses\": [\n                \"5333\"\n            ],\n            \"alert\": \"\",\n            \"certificate\": \"\",\n            \"withdrawal\": \"1 Jul 2018 - 00:00 CEST\",\n            \"deadline\": \"1 Jul 2018 - 00:00 CEST\",\n            \"store\": {\n                \"status\": true,\n                \"start\": \"01/07/2018\"\n            }\n        }\n    ],\n    \"meta\": {\n        \"totalPages\": 1\n    },\n    \"links\": {\n        \"self\": \"/api/v2/activities\"\n    }\n}"
+            }
+          ]
+        },
+        {
+          "_postman_id": "166341d0-5a39-491a-809b-9058e9eb52ab",
+          "name": "activities/:id",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {},
+            "url": "",
+            "description": "Delete activity"
+          },
           "response": []
         }
       ]
