@@ -1758,10 +1758,10 @@
           "_postman_id": "613ad146-a52e-4cf1-884c-0310994871d7",
           "name": "taxonomy_terms/:id",
           "request": {
-            "method": "GET",
+            "method": "DELETE",
             "header": [],
             "body": {},
-            "url": "",
+            "url": "{{domain}}/api/v2/taxonomy_terms/{{taxonomy_term_id}}",
             "description": "Delete a taxonomy term"
           },
           "response": []
