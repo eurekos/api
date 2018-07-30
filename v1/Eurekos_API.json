@@ -1765,6 +1765,18 @@
             "description": "Delete a taxonomy term"
           },
           "response": []
+        },
+        {
+          "_postman_id": "df2bdab1-fa2b-4541-8838-d1cbbc1e9d3b",
+          "name": "taxonomy_terms",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {},
+            "url": "",
+            "description": "Create a taxonomy term"
+          },
+          "response": []
         }
       ]
     }
