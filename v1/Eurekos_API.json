@@ -1701,7 +1701,7 @@
             "method": "GET",
             "header": [],
             "body": {},
-            "url": "",
+            "url": "{{domain}}/api/v2/taxonomy_terms",
             "description": "List of taxonomy terms"
           },
           "response": []
