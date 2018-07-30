@@ -1649,10 +1649,10 @@
           "_postman_id": "166341d0-5a39-491a-809b-9058e9eb52ab",
           "name": "activities/:id",
           "request": {
-            "method": "GET",
+            "method": "DELETE",
             "header": [],
             "body": {},
-            "url": "",
+            "url": "{{domain}}/api/v2/activities/{{activity_id}}",
             "description": "Delete an activity"
           },
           "response": []
