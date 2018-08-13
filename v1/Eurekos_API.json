@@ -1264,44 +1264,6 @@
             "description": "Video playlist data"
           },
           "response": []
-        },
-        {
-          "_postman_id": "3e88bd56-89ee-4420-b1e1-70a909f3114f",
-          "name": "http://demo.art/api/v2/videos",
-          "request": {
-            "auth": {
-              "type": "oauth2",
-              "oauth2": {
-                "accessToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImFiNmMxYWIzMzM0MjNiMGFjYTQyMGZmM2ZhNjJjZWMxNzI2YTJlMmRlNjY0MGYzZDc5NDg5OTUzNGY4ZWU1ODM4NTVhOTc4YzU0ODgyYWQwIn0.eyJhdWQiOiJDRjZBMzQ0OS04OTM5OTNBMi04QUI2ODQ3QS04MzhBOEI2My1FQTFDODhEQyIsImp0aSI6ImFiNmMxYWIzMzM0MjNiMGFjYTQyMGZmM2ZhNjJjZWMxNzI2YTJlMmRlNjY0MGYzZDc5NDg5OTUzNGY4ZWU1ODM4NTVhOTc4YzU0ODgyYWQwIiwiaWF0IjoxNTM0MTY1MDQ1LCJuYmYiOjE1MzQxNjUwNDUsImV4cCI6MTUzNDE2NTY0NSwic3ViIjoiIiwic2NvcGVzIjpbImRlZmF1bHQiXX0.CCkqnbJLkR-az2x2A6n8Lep86wu91oti927G6gtaCqLY0T4qDszRom5LTu2nCEV0B9sstzPjJaMzD0IKknS9iVV_WVD-2m-rE-SfkpfRXOtjFjZfH1t_sWM318JxxhtUEBEqrXBZtjU3xfVzA_2eHaLjlqD5eF__P2LSTN64UVA",
-                "tokenType": "Bearer",
-                "addTokenTo": "queryParams"
-              }
-            },
-            "method": "POST",
-            "header": [
-              {
-                "key": "Authorization",
-                "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImQ4ODBhNmI2ZjI1ODczNzY1ZGU2MTdkZTIzNGQ4MTc1YmU3YzBjOWRkZDJlYjM2Njc4N2I4ZTViNmQyNjBkMGQyZGMxMTUwZjc0MzdiMDIxIn0.eyJhdWQiOiJDRjZBMzQ0OS04OTM5OTNBMi04QUI2ODQ3QS04MzhBOEI2My1FQTFDODhEQyIsImp0aSI6ImQ4ODBhNmI2ZjI1ODczNzY1ZGU2MTdkZTIzNGQ4MTc1YmU3YzBjOWRkZDJlYjM2Njc4N2I4ZTViNmQyNjBkMGQyZGMxMTUwZjc0MzdiMDIxIiwiaWF0IjoxNTM0MTY1NzUxLCJuYmYiOjE1MzQxNjU3NTEsImV4cCI6MTUzNDE2NjM1MSwic3ViIjoiIiwic2NvcGVzIjpbImRlZmF1bHQiXX0.OWdep0kUCgRIFgmee0BiXPSxKusrQFjIbrJqWcehuvfr6GDf5cJegOkEdqsm8NYuGW14rSAAg8pX054GN_3AYqvNymOb7QAO_Rrr1tAzqqcEgE5UFotiOUM_K06sufIGk75Xyo2XU8xEtDYQAf7DQKNWgFrrrEvMPfG6z4dG--I"
-              }
-            ],
-            "body": {
-              "mode": "formdata",
-              "formdata": [
-                {
-                  "key": "video",
-                  "value": null,
-                  "type": "file"
-                },
-                {
-                  "key": "data",
-                  "value": "{\"bundle\":\"video\",\"author\":1}",
-                  "type": "text"
-                }
-              ]
-            },
-            "url": "http://demo.art/api/v2/videos"
-          },
-          "response": []
         }
       ]
     },
