@@ -18,7 +18,7 @@
             "auth": {
               "type": "oauth2",
               "oauth2": {
-                "accessToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImIyNmI4YzFiMmUzMzZkNjFiMTc0MWZkZDMyZmI2NzMxMDRkZDU0ZjI3OWIxZDQxZTFmZTk1OGMzYzYwZGU0NTk1MWExZGU3NzcyY2Y3MzI0In0.eyJhdWQiOiI4MkI5QTQ3OC00MjNENEUwMy1BQUFGNjRDQy03ODQ5QUNEOS0xNzJFQTE5OCIsImp0aSI6ImIyNmI4YzFiMmUzMzZkNjFiMTc0MWZkZDMyZmI2NzMxMDRkZDU0ZjI3OWIxZDQxZTFmZTk1OGMzYzYwZGU0NTk1MWExZGU3NzcyY2Y3MzI0IiwiaWF0IjoxNTIxODkzMzc1LCJuYmYiOjE1MjE4OTMzNzUsImV4cCI6MTUyMTg5Mzk3NSwic3ViIjoiIiwic2NvcGVzIjpbImRlZmF1bHQiXX0.S758ZsWAN2Di37NGbCKhRHoV3pkUG_C04xa2jt2eMkGMPf9RuyfbFTGtLdTRbMSickUpdRYM8rFPdCzCYJNaGvOhCt-5NDzjxRyBjZUSICGTgXq18NRdNbEcw1KDs6eaO_sUg5FwhHD_BeqPdtjPs3aN49FtSQSXSwH-PJtLcgs",
+                "accessToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjgyZTZmYTg1MWFlODZmMjU5YTBlODhlMTU1MjU2ZGViN2UwZWZiMDExZGQ1YmUxNjIyYzA5ZTU0OWRmZmNiOGMzYmY2M2Y3ODY3ZWJmODU4In0.eyJhdWQiOiJGNzhFRkYzNi0yNEVBREEyQi0yRUNCRDA5OS04QjRFREEzMy05Q0UyNTdDRSIsImp0aSI6IjgyZTZmYTg1MWFlODZmMjU5YTBlODhlMTU1MjU2ZGViN2UwZWZiMDExZGQ1YmUxNjIyYzA5ZTU0OWRmZmNiOGMzYmY2M2Y3ODY3ZWJmODU4IiwiaWF0IjoxNTM3MzQ4NTUzLCJuYmYiOjE1MzczNDg1NTMsImV4cCI6MTUzNzM0OTE1Mywic3ViIjoiIiwic2NvcGVzIjpbImRlZmF1bHQiLCJjb3Vyc2VzLnJlYWQiXX0.Z1IlM9Sy0MuFpffo0Fg0AVgU8-hbxiuHc70YChPSSq_TervhpsEqG-Us90DLzLq3BmCSIWVvnw2adzfjy7qyPWIHXTXcn0lgD7myB4rvyAPina6Nssgm71i2336w82BRO1haL0nQRds1-x-jYimCkWo6vJ9LsvfXmUorDVaNGqCvLdIRXn-tzUKoRqw6zvlBCC3ikXvfedyuw9T36Y4L5tfBN2ouCV3YBfTGPcX601GI9VZAdKqcAiCnnOSuygvp5NSomd2Omv3JW4iGXZThXGBpwiT_dcGWMExa7ThsYmiI_4uPKH6yoKwY5gvWBJsUGjWTzn59AaF34yOItHZOdQ",
                 "tokenType": "Bearer",
                 "addTokenTo": "header"
               }
@@ -27,7 +27,7 @@
             "header": [],
             "body": {},
             "url": "{{domain}}/api/{{version}}/courses",
-            "description": "List of courses"
+            "description": "List of courses.\n\nAdditional query parameters:\n- author (numeric). User ID of the course author.\n- category (numeric). Term ID of the course category.\n- order_by (string). Allowed values are `changed` and `promotion`.\n- sort (string). Allowed values are `asc` and `desc`."
           },
           "response": [
             {
