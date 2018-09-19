@@ -648,21 +648,17 @@
           },
           "response": [
             {
-              "id": "5913fc55-f9fb-40cc-93de-c7950d49374b",
+              "id": "8d2dd8a8-f9bb-493a-b521-6eeae8182e2d",
               "name": "roles",
               "originalRequest": {
                 "method": "GET",
                 "header": [
                   {
                     "key": "Content-Type",
-                    "value": "application/x-www-form-urlencoded",
-                    "disabled": false
+                    "value": "application/x-www-form-urlencoded"
                   }
                 ],
-                "body": {
-                  "mode": "raw",
-                  "raw": ""
-                },
+                "body": {},
                 "url": "{{domain}}/api/{{version}}/roles"
               },
               "status": "OK",
@@ -695,7 +691,7 @@
                 },
                 {
                   "key": "Date",
-                  "value": "Thu, 22 Mar 2018 14:58:17 GMT",
+                  "value": "Wed, 19 Sep 2018 12:36:10 GMT",
                   "name": "Date",
                   "description": "The date and time that the message was sent"
                 },
@@ -706,22 +702,10 @@
                   "description": "Gives the date/time after which the response is considered stale"
                 },
                 {
-                  "key": "Referrer-Policy",
-                  "value": "no-referrer-when-downgrade",
-                  "name": "Referrer-Policy",
-                  "description": "Custom header"
-                },
-                {
                   "key": "Server",
-                  "value": "nginx",
+                  "value": "nginx/1.15.3",
                   "name": "Server",
                   "description": "A name for the server"
-                },
-                {
-                  "key": "Strict-Transport-Security",
-                  "value": "max-age=31536000",
-                  "name": "Strict-Transport-Security",
-                  "description": "A HSTS Policy informing the HTTP client how long to cache the HTTPS only policy and whether this applies to subdomains."
                 },
                 {
                   "key": "Transfer-Encoding",
@@ -736,21 +720,136 @@
                   "description": "The only defined value, \"nosniff\", prevents Internet Explorer from MIME-sniffing a response away from the declared content-type"
                 },
                 {
+                  "key": "X-Powered-By",
+                  "value": "PHP/7.0.32",
+                  "name": "X-Powered-By",
+                  "description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+                },
+                {
                   "key": "X-UA-Compatible",
                   "value": "IE=edge",
                   "name": "X-UA-Compatible",
                   "description": "Custom header"
-                },
-                {
-                  "key": "X-XSS-Protection",
-                  "value": "1; mode=block",
-                  "name": "X-XSS-Protection",
-                  "description": "Cross-site scripting (XSS) filter"
                 }
               ],
               "cookie": [],
               "responseTime": null,
-              "body": "{\n    \"links\": {\n        \"self\": \"/api/v1/roles\"\n    },\n    \"data\": [\n        {\n            \"rid\": \"2\",\n            \"name\": \"Student\"\n        },\n        {\n            \"rid\": \"3\",\n            \"name\": \"Support\"\n        },\n        {\n            \"rid\": \"4\",\n            \"name\": \"Teacher\"\n        }\n    ]\n}"
+              "body": "{\"data\":[{\"rid\":\"3\",\"name\":\"Administrator\"},{\"rid\":\"1\",\"name\":\"anonymous user\"},{\"rid\":\"2\",\"name\":\"authenticated user\"},{\"rid\":\"17\",\"name\":\"Course administrator\"},{\"rid\":\"8\",\"name\":\"Instructor\"},{\"rid\":\"7\",\"name\":\"Learner\"},{\"rid\":\"15\",\"name\":\"Platform administrator\"},{\"rid\":\"16\",\"name\":\"Support\"}],\"meta\":{\"totalPages\":1},\"links\":{\"self\":\"\\/api\\/v2\\/roles\"}}"
+            }
+          ]
+        },
+        {
+          "_postman_id": "6f23b7c1-1264-4e70-8637-5249bf898db8",
+          "name": "roles Copy",
+          "request": {
+            "auth": {
+              "type": "oauth2",
+              "oauth2": {
+                "accessToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImJlMDQyMGIwM2JmZjc1NDQ4ZTFiNzhmZDVhZmZlOTA0OTMyYjZkMTdhMjk0NTU0ZmY2YTkwM2VjMzhjZmQ0ZGIxZDRjYTAxOWI0YWM0ZDBjIn0.eyJhdWQiOiI2QUMyMTFBMi1BQjEzRTg2MC04RTY0QzAxNS04QTQxNTJGOC0zNEI3MzIwRiIsImp0aSI6ImJlMDQyMGIwM2JmZjc1NDQ4ZTFiNzhmZDVhZmZlOTA0OTMyYjZkMTdhMjk0NTU0ZmY2YTkwM2VjMzhjZmQ0ZGIxZDRjYTAxOWI0YWM0ZDBjIiwiaWF0IjoxNTIxNzE0MTUxLCJuYmYiOjE1MjE3MTQxNTEsImV4cCI6MTUyMTcxNDc1MSwic3ViIjoiIiwic2NvcGVzIjpbImRlZmF1bHQiXX0.izkMedOYTIjGs_5gXq59nBPB-gHgJMpt1eJg2B7gu3WJPnXJwnTNAfIxvbsS4wzKje3xDpfs5nXL8TI_OOIWejwEVN5kpGG4e9-45RFYn6YG3E44LwCEclI2maHtUyIIj6EPm_5gsfHBdRj8E_yX8IYbw3A53FAxd83LCW0JJDWreUtzwHprbxDGhjAZ1mJKVu-7AJSa4eyWk1In9VhW8O5W4xvYYrwdOE2LvxOg0ZhKgZsJUjUZkdGQRoIJRw9k0w8XZLZfEETm6i1gBbKE-Z3Pt-HxuczCyltrW3sS9DnKPmK43OoHC_kl_XdLguveqyKiJdwNW3gHnYnIujuaoQ",
+                "tokenType": "Bearer",
+                "addTokenTo": "header"
+              }
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/x-www-form-urlencoded"
+              }
+            ],
+            "body": {},
+            "url": "{{domain}}/api/{{version}}/roles",
+            "description": "Roles data"
+          },
+          "response": [
+            {
+              "id": "3a15c8bc-1df1-4696-9273-9c743d8fd02d",
+              "name": "roles",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/x-www-form-urlencoded"
+                  }
+                ],
+                "body": {},
+                "url": "{{domain}}/api/{{version}}/roles"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache, must-revalidate",
+                  "name": "Cache-Control",
+                  "description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive",
+                  "name": "Connection",
+                  "description": "Options that are desired for the connection"
+                },
+                {
+                  "key": "Content-Encoding",
+                  "value": "gzip",
+                  "name": "Content-Encoding",
+                  "description": "The type of encoding used on the data."
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "name": "Content-Type",
+                  "description": "The mime type of this content"
+                },
+                {
+                  "key": "Date",
+                  "value": "Wed, 19 Sep 2018 12:36:10 GMT",
+                  "name": "Date",
+                  "description": "The date and time that the message was sent"
+                },
+                {
+                  "key": "Expires",
+                  "value": "Sun, 19 Nov 1978 05:00:00 GMT",
+                  "name": "Expires",
+                  "description": "Gives the date/time after which the response is considered stale"
+                },
+                {
+                  "key": "Server",
+                  "value": "nginx/1.15.3",
+                  "name": "Server",
+                  "description": "A name for the server"
+                },
+                {
+                  "key": "Transfer-Encoding",
+                  "value": "chunked",
+                  "name": "Transfer-Encoding",
+                  "description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff",
+                  "name": "X-Content-Type-Options",
+                  "description": "The only defined value, \"nosniff\", prevents Internet Explorer from MIME-sniffing a response away from the declared content-type"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/7.0.32",
+                  "name": "X-Powered-By",
+                  "description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+                },
+                {
+                  "key": "X-UA-Compatible",
+                  "value": "IE=edge",
+                  "name": "X-UA-Compatible",
+                  "description": "Custom header"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\"data\":[{\"rid\":\"3\",\"name\":\"Administrator\"},{\"rid\":\"1\",\"name\":\"anonymous user\"},{\"rid\":\"2\",\"name\":\"authenticated user\"},{\"rid\":\"17\",\"name\":\"Course administrator\"},{\"rid\":\"8\",\"name\":\"Instructor\"},{\"rid\":\"7\",\"name\":\"Learner\"},{\"rid\":\"15\",\"name\":\"Platform administrator\"},{\"rid\":\"16\",\"name\":\"Support\"}],\"meta\":{\"totalPages\":1},\"links\":{\"self\":\"\\/api\\/v2\\/roles\"}}"
             }
           ]
         }
