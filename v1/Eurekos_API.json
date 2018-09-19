@@ -120,7 +120,7 @@
           },
           "response": [
             {
-              "id": "01125688-d96e-41f5-b019-b35d7d525151",
+              "id": "0dc1af7e-f8e1-48d3-a13d-1cd820be8ce6",
               "name": "courses/:id",
               "originalRequest": {
                 "method": "GET",
@@ -158,7 +158,7 @@
                 },
                 {
                   "key": "Date",
-                  "value": "Wed, 19 Sep 2018 09:28:59 GMT",
+                  "value": "Wed, 19 Sep 2018 12:16:51 GMT",
                   "name": "Date",
                   "description": "The date and time that the message was sent"
                 },
@@ -201,7 +201,7 @@
               ],
               "cookie": [],
               "responseTime": null,
-              "body": "{\"data\":{\"nid\":\"4418\",\"title\":\"Change Management\\u2122 Foundation - DK\",\"description\":\"\",\"path\":\"\\/module\\/change-managementtm-foundation-dk\",\"module\":\"change_managementtm_foundation_-_dk\",\"language\":\"en\",\"author\":\"0\",\"author_name\":\"Anonym\",\"created\":\"1537258509\",\"changed\":\"1537259235\",\"status\":\"1\",\"picture\":\"45950\",\"job_functions\":[\"3379\"],\"categories\":[\"3378\"],\"course_types\":[\"3484\"],\"other\":[\"3419\"]}}"
+              "body": "{\"data\":{\"nid\":\"4424\",\"title\":\"Combi scorm\",\"description\":\"Combi scorm course\",\"path\":\"\\/module\\/combi-scorm\",\"module\":\"combi_scorm\",\"language\":\"en\",\"author\":\"37479\",\"author_name\":\"Nick Etlar Eriksen\",\"created\":\"1537358769\",\"changed\":\"1537358782\",\"status\":\"1\",\"promotion\":null,\"labels\":[],\"picture\":\"45387\",\"job_functions\":[\"3422\"],\"categories\":[\"3378\"],\"course_types\":[\"3488\"],\"other\":[\"3419\"]}}"
             }
           ]
         },
@@ -209,19 +209,11 @@
           "_postman_id": "b8a745a2-c7db-4100-a5af-9faf26e1394f",
           "name": "courses/:id/description",
           "request": {
-            "auth": {
-              "type": "oauth2",
-              "oauth2": {
-                "accessToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjM0OTRjYWQzZjc3NGZjNzY4NjU2ZDczOWFiOGVkZWMwYjg5ZTIzZTJiNmIxY2RmMjFmOTU1YzI0ZjAzYzkzNjI0ZTVjY2NjYzhhNzZmN2Y0In0.eyJhdWQiOiI4MkI5QTQ3OC00MjNENEUwMy1BQUFGNjRDQy03ODQ5QUNEOS0xNzJFQTE5OCIsImp0aSI6IjM0OTRjYWQzZjc3NGZjNzY4NjU2ZDczOWFiOGVkZWMwYjg5ZTIzZTJiNmIxY2RmMjFmOTU1YzI0ZjAzYzkzNjI0ZTVjY2NjYzhhNzZmN2Y0IiwiaWF0IjoxNTIxODk1MzYwLCJuYmYiOjE1MjE4OTUzNjAsImV4cCI6MTUyMTg5NTk2MCwic3ViIjoiIiwic2NvcGVzIjpbImRlZmF1bHQiXX0.G7rxTk3HxeCljma0rcb8b6XyFrWv_u8b0c9luuteVpBOjUuKv8TpmKBUF6wQzKIhqvm1mI_EPyMz6a2U00BgHnz31XjNjXJBM8041fpb4zq1hZBrho6Fnc5SWwfrgZ2U2eQtRces2UPlvVeQMnndpl7cALaDiz-Lr5RYjiObxrU",
-                "tokenType": "Bearer",
-                "addTokenTo": "header"
-              }
-            },
             "method": "GET",
             "header": [],
             "body": {},
             "url": "{{domain}}/api/{{version}}/courses/{{course_id}}/description",
-            "description": "Course description data"
+            "description": "DEPRECATED. Course description data"
           },
           "response": []
         }
