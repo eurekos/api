@@ -2,7 +2,7 @@
   "info": {
     "_postman_id": "ff5bf839-493f-4154-8361-7cb01fe11237",
     "name": "Eurekos API",
-    "description": "# Authentication\n## OAuth 2.0 authorization flow\n\nEurekos API use the OAuth 2.0 protocol for authentication and authorization. Client credentials and authorization code scenarios are supported.\n\n### Obtaining access token\n\n`POST oauth2/token`\n\nThis method allows to obtain an OAuth access token.\n\n#### Parameters  \n| Name          | Default value            |\n| ------------- |-----------------------------------|\n| grant_type  | client_credentials        |\n| client_id     | Client ID provided by Eurekos    |\n| client_secret | Client Secret provided by Eurekos |\n| scope         | YOUR_SCOPES              |",
+    "description": "# Authentication\n## OAuth 2.0 authorization flow\n\nEurekos API use the OAuth 2.0 protocol for authentication and authorization. Client credentials and authorization code scenarios are supported.\n\n### Obtaining access token\n\n`POST oauth2/token`\n\nThis method allows to obtain an OAuth access token.\n\n#### Parameters  \n| Name          | Default value            |\n| ------------- |-----------------------------------|\n| grant_type  | client_credentials        |\n| client_id     | Client ID provided by Eurekos    |\n| client_secret | Client Secret provided by Eurekos |\n| scope         | YOUR_SCOPES              |\n\n### Verify token callback\n\n`oauth2/token/verify`",
     "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
   },
   "item": [
@@ -31,85 +31,7 @@
           },
           "response": [
             {
-              "id": "c4741959-6d39-4ece-9c6b-c0711089e532",
-              "name": "{{domain}}/api/{{version}}/courses",
-              "originalRequest": {
-                "method": "GET",
-                "header": [],
-                "body": {},
-                "url": "{{domain}}/api/{{version}}/courses"
-              },
-              "status": "OK",
-              "code": 200,
-              "_postman_previewlanguage": "json",
-              "header": [
-                {
-                  "key": "Cache-Control",
-                  "value": "no-cache, must-revalidate",
-                  "name": "Cache-Control",
-                  "description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
-                },
-                {
-                  "key": "Content-Encoding",
-                  "value": "gzip",
-                  "name": "Content-Encoding",
-                  "description": "The type of encoding used on the data."
-                },
-                {
-                  "key": "Content-Type",
-                  "value": "application/json",
-                  "name": "Content-Type",
-                  "description": "The mime type of this content"
-                },
-                {
-                  "key": "Date",
-                  "value": "Sat, 24 Mar 2018 12:13:37 GMT",
-                  "name": "Date",
-                  "description": "The date and time that the message was sent"
-                },
-                {
-                  "key": "Expires",
-                  "value": "Sun, 19 Nov 1978 05:00:00 GMT",
-                  "name": "Expires",
-                  "description": "Gives the date/time after which the response is considered stale"
-                },
-                {
-                  "key": "Server",
-                  "value": "nginx/1.12.2",
-                  "name": "Server",
-                  "description": "A name for the server"
-                },
-                {
-                  "key": "Transfer-Encoding",
-                  "value": "chunked",
-                  "name": "Transfer-Encoding",
-                  "description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
-                },
-                {
-                  "key": "X-Content-Type-Options",
-                  "value": "nosniff",
-                  "name": "X-Content-Type-Options",
-                  "description": "The only defined value, \"nosniff\", prevents Internet Explorer from MIME-sniffing a response away from the declared content-type"
-                },
-                {
-                  "key": "X-Powered-By",
-                  "value": "PHP/7.0.26",
-                  "name": "X-Powered-By",
-                  "description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
-                },
-                {
-                  "key": "X-UA-Compatible",
-                  "value": "IE=edge",
-                  "name": "X-UA-Compatible",
-                  "description": "Custom header"
-                }
-              ],
-              "cookie": [],
-              "responseTime": null,
-              "body": "{\"data\":[{\"nid\":\"3576\",\"title\":\"Creating a course\",\"language\":\"English\",\"flag\":\"0\",\"label\":false},{\"nid\":\"3631\",\"title\":\"Nutrition: Healthy food for better living\",\"language\":\"English\",\"flag\":\"0\",\"label\":false},{\"nid\":\"3658\",\"title\":\"Effective use of lesson materials\",\"language\":\"English\",\"flag\":\"0\",\"label\":false},{\"nid\":\"3719\",\"title\":\"PRINCE2 Foundation - English\",\"language\":\"English\",\"flag\":\"0\",\"label\":false}],\"meta\":{\"totalPages\":1}}"
-            },
-            {
-              "id": "d685b65a-73ec-4a3c-9efc-2817769d1fe5",
+              "id": "9bc1db95-1f71-4ee4-a6c0-61cfc13fb8fc",
               "name": "courses",
               "originalRequest": {
                 "method": "GET",
@@ -147,7 +69,7 @@
                 },
                 {
                   "key": "Date",
-                  "value": "Wed, 19 Sep 2018 09:21:31 GMT",
+                  "value": "Wed, 19 Sep 2018 12:08:50 GMT",
                   "name": "Date",
                   "description": "The date and time that the message was sent"
                 },
@@ -190,7 +112,7 @@
               ],
               "cookie": [],
               "responseTime": null,
-              "body": "{\"data\":[{\"nid\":\"4081\",\"title\":\"Klik for at redigere\",\"description\":\"asdf\",\"path\":\"\\/module\\/klik-redigere\",\"module\":\"asfasdf\",\"language\":\"da\",\"author\":\"37430\",\"author_name\":\"Courseadmin Dansk\",\"created\":\"1533906059\",\"changed\":\"1535963754\",\"status\":\"1\",\"picture\":\"45387\",\"job_functions\":[\"3379\"],\"categories\":[\"3378\"],\"course_types\":[\"3486\"],\"other\":[\"3380\"]},{\"nid\":\"4246\",\"title\":\"UC-1000 complete online training\",\"description\":\"\",\"path\":\"\\/module\\/uc-1000-complete-online-training\",\"module\":\"uc-1000_complete_online_training\",\"language\":\"en\",\"author\":\"0\",\"author_name\":\"Anonym\",\"created\":\"1537258433\",\"changed\":\"1537259332\",\"status\":\"1\",\"picture\":\"45747\",\"job_functions\":[\"3379\"],\"categories\":[\"3378\"],\"course_types\":[\"3484\"],\"other\":[\"3420\"]},{\"nid\":\"4286\",\"title\":\"Extended IPU basic video training\",\"description\":\"\",\"path\":\"\\/module\\/extended-ipu-basic-video-training\",\"module\":\"extended_ipu_basic_video_training\",\"language\":\"fi\",\"author\":\"0\",\"author_name\":\"Anonym\",\"created\":\"1537258447\",\"changed\":\"1537259314\",\"status\":\"1\",\"picture\":\"45763\",\"job_functions\":[\"3423\"],\"categories\":[\"3426\"],\"course_types\":[\"3488\"],\"other\":[\"3380\"]},{\"nid\":\"4288\",\"title\":\"Extended IPU Basic Online Training\",\"description\":\"Description test\",\"path\":\"\\/module\\/extended-ipu-basic-online-training\",\"module\":\"extended_ipu_basic_online_training\",\"language\":\"fi\",\"author\":\"1\",\"author_name\":\"Eurekos administrator\",\"created\":\"1537258447\",\"changed\":\"1537265115\",\"status\":\"1\",\"picture\":\"45768\",\"job_functions\":[\"3423\"],\"categories\":[\"3426\"],\"course_types\":[\"3488\"],\"other\":[\"3380\"]},{\"nid\":\"4290\",\"title\":\"Extended IPU complete online training\",\"description\":\"\",\"path\":\"\\/module\\/extended-ipu-complete-online-training\",\"module\":\"extended_ipu_complete_online_training\",\"language\":\"fi\",\"author\":\"0\",\"author_name\":\"Anonym\",\"created\":\"1537258447\",\"changed\":\"1537259314\",\"status\":\"1\",\"picture\":\"45773\",\"job_functions\":[\"3423\"],\"categories\":[\"3426\"],\"course_types\":[\"3488\"],\"other\":[\"3380\"]},{\"nid\":\"4292\",\"title\":\"Extended IPU Basic Online Training\",\"description\":\"\",\"path\":\"\\/module\\/extended-ipu-basic-online-training-0\",\"module\":\"extended_ipu_basic_online_training-0\",\"language\":\"ar\",\"author\":\"0\",\"author_name\":\"Anonym\",\"created\":\"1537258463\",\"changed\":\"1537259271\",\"status\":\"1\",\"picture\":\"45778\",\"job_functions\":[\"3423\"],\"categories\":[\"3426\"],\"course_types\":[\"3486\"],\"other\":[\"3487\"]},{\"nid\":\"4325\",\"title\":\"pocH-100i basic video training\",\"description\":\"\",\"path\":\"\\/module\\/poch-100i-basic-video-training\",\"module\":\"poch-100i_basic_video_training\",\"language\":\"da\",\"author\":\"0\",\"author_name\":\"Anonym\",\"created\":\"1537258485\",\"changed\":\"1537259254\",\"status\":\"1\",\"picture\":\"45798\",\"job_functions\":[\"3422\"],\"categories\":[\"3425\"],\"course_types\":[\"3485\"],\"other\":[\"3421\"]},{\"nid\":\"4418\",\"title\":\"Change Management\\u2122 Foundation - DK\",\"description\":\"\",\"path\":\"\\/module\\/change-managementtm-foundation-dk\",\"module\":\"change_managementtm_foundation_-_dk\",\"language\":\"en\",\"author\":\"0\",\"author_name\":\"Anonym\",\"created\":\"1537258509\",\"changed\":\"1537259235\",\"status\":\"1\",\"picture\":\"45950\",\"job_functions\":[\"3379\"],\"categories\":[\"3378\"],\"course_types\":[\"3484\"],\"other\":[\"3419\"]}],\"meta\":{\"totalPages\":1},\"links\":{\"self\":\"\\/api\\/v2\\/courses\"}}"
+              "body": "{\n    \"data\": [\n        {\n            \"nid\": \"4418\",\n            \"title\": \"Change Management\u2122 Foundation - DK\",\n            \"description\": \"\",\n            \"path\": \"/module/change-managementtm-foundation-dk\",\n            \"module\": \"change_managementtm_foundation_-_dk\",\n            \"language\": \"en\",\n            \"author\": \"0\",\n            \"author_name\": \"Anonym\",\n            \"created\": \"1537258509\",\n            \"changed\": \"1537259235\",\n            \"status\": \"1\",\n            \"promotion\": \"0\",\n            \"labels\": [],\n            \"picture\": \"45950\",\n            \"job_functions\": [\n                \"3379\"\n            ],\n            \"categories\": [\n                \"3378\"\n            ],\n            \"course_types\": [\n                \"3484\"\n            ],\n            \"other\": [\n                \"3419\"\n            ]\n        },\n        {\n            \"nid\": \"4424\",\n            \"title\": \"Combi scorm\",\n            \"description\": \"Combi scorm course\",\n            \"path\": \"/module/combi-scorm\",\n            \"module\": \"combi_scorm\",\n            \"language\": \"en\",\n            \"author\": \"37479\",\n            \"author_name\": \"Nick Etlar Eriksen\",\n            \"created\": \"1537358769\",\n            \"changed\": \"1537358782\",\n            \"status\": \"1\",\n            \"promotion\": \"0\",\n            \"labels\": [\n                \"combi\"\n            ],\n            \"picture\": \"45387\",\n            \"job_functions\": [\n                \"3422\"\n            ],\n            \"categories\": [\n                \"3378\"\n            ],\n            \"course_types\": [\n                \"3488\"\n            ],\n            \"other\": [\n                \"3419\"\n            ]\n        }\n    ],\n    \"meta\": {\n        \"totalPages\": 1\n    },\n    \"links\": {\n        \"self\": \"/api/v2/courses\"\n    }\n}"
             }
           ]
         },
@@ -212,7 +134,92 @@
             "url": "{{domain}}/api/{{version}}/courses/{{course_id}}",
             "description": "Course data"
           },
-          "response": []
+          "response": [
+            {
+              "id": "01125688-d96e-41f5-b019-b35d7d525151",
+              "name": "courses/:id",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "body": {},
+                "url": "{{domain}}/api/{{version}}/courses/{{course_id}}"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache, must-revalidate",
+                  "name": "Cache-Control",
+                  "description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive",
+                  "name": "Connection",
+                  "description": "Options that are desired for the connection"
+                },
+                {
+                  "key": "Content-Encoding",
+                  "value": "gzip",
+                  "name": "Content-Encoding",
+                  "description": "The type of encoding used on the data."
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "name": "Content-Type",
+                  "description": "The mime type of this content"
+                },
+                {
+                  "key": "Date",
+                  "value": "Wed, 19 Sep 2018 09:28:59 GMT",
+                  "name": "Date",
+                  "description": "The date and time that the message was sent"
+                },
+                {
+                  "key": "Expires",
+                  "value": "Sun, 19 Nov 1978 05:00:00 GMT",
+                  "name": "Expires",
+                  "description": "Gives the date/time after which the response is considered stale"
+                },
+                {
+                  "key": "Server",
+                  "value": "nginx/1.15.3",
+                  "name": "Server",
+                  "description": "A name for the server"
+                },
+                {
+                  "key": "Transfer-Encoding",
+                  "value": "chunked",
+                  "name": "Transfer-Encoding",
+                  "description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff",
+                  "name": "X-Content-Type-Options",
+                  "description": "The only defined value, \"nosniff\", prevents Internet Explorer from MIME-sniffing a response away from the declared content-type"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/7.0.32",
+                  "name": "X-Powered-By",
+                  "description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+                },
+                {
+                  "key": "X-UA-Compatible",
+                  "value": "IE=edge",
+                  "name": "X-UA-Compatible",
+                  "description": "Custom header"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\"data\":{\"nid\":\"4418\",\"title\":\"Change Management\\u2122 Foundation - DK\",\"description\":\"\",\"path\":\"\\/module\\/change-managementtm-foundation-dk\",\"module\":\"change_managementtm_foundation_-_dk\",\"language\":\"en\",\"author\":\"0\",\"author_name\":\"Anonym\",\"created\":\"1537258509\",\"changed\":\"1537259235\",\"status\":\"1\",\"picture\":\"45950\",\"job_functions\":[\"3379\"],\"categories\":[\"3378\"],\"course_types\":[\"3484\"],\"other\":[\"3419\"]}}"
+            }
+          ]
         },
         {
           "_postman_id": "b8a745a2-c7db-4100-a5af-9faf26e1394f",
@@ -1905,7 +1912,7 @@
   "auth": {
     "type": "oauth2",
     "oauth2": {
-      "accessToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImUxN2IyZjllODk0MTU4YTM2M2ZlOTZmMGIyMDE0YTMzNmQ1MWVlNGIzMGRjMmIwZmVmOTI3ZjU4MGZlMGIxMGJkYjFjMDI3ZTgzZmM5YTcxIn0.eyJhdWQiOiI2QUMyMTFBMi1BQjEzRTg2MC04RTY0QzAxNS04QTQxNTJGOC0zNEI3MzIwRiIsImp0aSI6ImUxN2IyZjllODk0MTU4YTM2M2ZlOTZmMGIyMDE0YTMzNmQ1MWVlNGIzMGRjMmIwZmVmOTI3ZjU4MGZlMGIxMGJkYjFjMDI3ZTgzZmM5YTcxIiwiaWF0IjoxNTIxNzE1NjMwLCJuYmYiOjE1MjE3MTU2MzAsImV4cCI6MTUyMTcxNjIzMCwic3ViIjoiIiwic2NvcGVzIjpbImRlZmF1bHQiXX0.QoEDeNe1Kun8omOCG8Nhd88Q4i7zxr8O_h1mI-v3mX-3VottqSHhIMMuOrKCC9S4bye14u1EUDLKnKI20o08Ugg-B5tkkOWiRm-4C-gy7IWp0W1XSZh9EQM8vjYGJWGomR3Sb6UvQ59_KegU5YK510dXA6pD4a6qEb9pVRgFXCjuNYxe_E-QQAK4j18AFig6-9rMt54ywAZtHsDAeg9AsG3fspk7s-7gAWCS43knVw8RusnDq1ZTxlp9-k0nDSW7O7eMNYW39xztij2Q3ONerfHk6_dBH65gYzkqSuqXM8Cd3Y-lVL2CixaqgnDJTjEk7iEwmErfE9posxGkoXgr9w",
+      "accessToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImZmY2ViNTg2ZWE3OWUwNDExMDU5OWFhZmI2MzA1ZjY3OTllODdhMDc4MDhhMzE5MDAyNzc4YTgwNDkyZDA5M2IzNjY0YTM3NmFhNzYxYjdjIn0.eyJhdWQiOiJGNzhFRkYzNi0yNEVBREEyQi0yRUNCRDA5OS04QjRFREEzMy05Q0UyNTdDRSIsImp0aSI6ImZmY2ViNTg2ZWE3OWUwNDExMDU5OWFhZmI2MzA1ZjY3OTllODdhMDc4MDhhMzE5MDAyNzc4YTgwNDkyZDA5M2IzNjY0YTM3NmFhNzYxYjdjIiwiaWF0IjoxNTM3MzU5MjMxLCJuYmYiOjE1MzczNTkyMzEsImV4cCI6MTUzNzM1OTgzMSwic3ViIjoiIiwic2NvcGVzIjpbImRlZmF1bHQiLCJjb3Vyc2VzLnJlYWQiLCJ0YXhvbm9teV90ZXJtcy5yZWFkIl19.haFPP1UX9AiciWON9k2zR-gu1uzpDMvv1hizjTCbFD9OE98eLhJ3iEGyrTMrcJ-ZzmkzljBWDarmFpEly7YfwXyymgbgluHogewRR8w8U8nTxD8lNziVWYPgH3NYdIQSZj-KpUFwCHrcOA_PHIKV7n-uQPkFKPUL8fJUw4qrykLefz-1eTRFX6-jFSoJ-SIYaLQHuXRu-EGogODn3RGOPkivtoSm4wPSe32UPJToPXu2IHBjQAqBzUwn_6nsphXzKNct6_zja9xX34SA2TEQr42Y2jnxoP8u_7MB3ssiTPVWFDUk7nQyvE_rlAFf1FSAM6E0m7mgzzMtEKT8y4NJyA",
       "tokenType": "Bearer",
       "addTokenTo": "header"
     }
