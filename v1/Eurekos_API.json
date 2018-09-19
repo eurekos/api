@@ -624,14 +624,6 @@
           "_postman_id": "1da9c8aa-428f-4f14-9b2c-2f7b379b4bf7",
           "name": "roles",
           "request": {
-            "auth": {
-              "type": "oauth2",
-              "oauth2": {
-                "accessToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImJlMDQyMGIwM2JmZjc1NDQ4ZTFiNzhmZDVhZmZlOTA0OTMyYjZkMTdhMjk0NTU0ZmY2YTkwM2VjMzhjZmQ0ZGIxZDRjYTAxOWI0YWM0ZDBjIn0.eyJhdWQiOiI2QUMyMTFBMi1BQjEzRTg2MC04RTY0QzAxNS04QTQxNTJGOC0zNEI3MzIwRiIsImp0aSI6ImJlMDQyMGIwM2JmZjc1NDQ4ZTFiNzhmZDVhZmZlOTA0OTMyYjZkMTdhMjk0NTU0ZmY2YTkwM2VjMzhjZmQ0ZGIxZDRjYTAxOWI0YWM0ZDBjIiwiaWF0IjoxNTIxNzE0MTUxLCJuYmYiOjE1MjE3MTQxNTEsImV4cCI6MTUyMTcxNDc1MSwic3ViIjoiIiwic2NvcGVzIjpbImRlZmF1bHQiXX0.izkMedOYTIjGs_5gXq59nBPB-gHgJMpt1eJg2B7gu3WJPnXJwnTNAfIxvbsS4wzKje3xDpfs5nXL8TI_OOIWejwEVN5kpGG4e9-45RFYn6YG3E44LwCEclI2maHtUyIIj6EPm_5gsfHBdRj8E_yX8IYbw3A53FAxd83LCW0JJDWreUtzwHprbxDGhjAZ1mJKVu-7AJSa4eyWk1In9VhW8O5W4xvYYrwdOE2LvxOg0ZhKgZsJUjUZkdGQRoIJRw9k0w8XZLZfEETm6i1gBbKE-Z3Pt-HxuczCyltrW3sS9DnKPmK43OoHC_kl_XdLguveqyKiJdwNW3gHnYnIujuaoQ",
-                "tokenType": "Bearer",
-                "addTokenTo": "header"
-              }
-            },
             "method": "GET",
             "header": [
               {
@@ -639,10 +631,7 @@
                 "value": "application/x-www-form-urlencoded"
               }
             ],
-            "body": {
-              "mode": "raw",
-              "raw": ""
-            },
+            "body": {},
             "url": "{{domain}}/api/{{version}}/roles",
             "description": "Roles data"
           },
@@ -740,7 +729,7 @@
         },
         {
           "_postman_id": "6f23b7c1-1264-4e70-8637-5249bf898db8",
-          "name": "roles Copy",
+          "name": "roles/:id",
           "request": {
             "auth": {
               "type": "oauth2",
@@ -758,23 +747,24 @@
               }
             ],
             "body": {},
-            "url": "{{domain}}/api/{{version}}/roles",
+            "url": "{{domain}}/api/{{version}}/roles/2",
             "description": "Roles data"
           },
           "response": [
             {
-              "id": "3a15c8bc-1df1-4696-9273-9c743d8fd02d",
-              "name": "roles",
+              "id": "9a960214-dca3-4092-a90d-48a200588e71",
+              "name": "roles/:id",
               "originalRequest": {
                 "method": "GET",
                 "header": [
                   {
                     "key": "Content-Type",
-                    "value": "application/x-www-form-urlencoded"
+                    "value": "application/x-www-form-urlencoded",
+                    "disabled": false
                   }
                 ],
                 "body": {},
-                "url": "{{domain}}/api/{{version}}/roles"
+                "url": "{{domain}}/api/{{version}}/roles/7"
               },
               "status": "OK",
               "code": 200,
@@ -806,7 +796,7 @@
                 },
                 {
                   "key": "Date",
-                  "value": "Wed, 19 Sep 2018 12:36:10 GMT",
+                  "value": "Wed, 19 Sep 2018 12:42:38 GMT",
                   "name": "Date",
                   "description": "The date and time that the message was sent"
                 },
@@ -849,7 +839,7 @@
               ],
               "cookie": [],
               "responseTime": null,
-              "body": "{\"data\":[{\"rid\":\"3\",\"name\":\"Administrator\"},{\"rid\":\"1\",\"name\":\"anonymous user\"},{\"rid\":\"2\",\"name\":\"authenticated user\"},{\"rid\":\"17\",\"name\":\"Course administrator\"},{\"rid\":\"8\",\"name\":\"Instructor\"},{\"rid\":\"7\",\"name\":\"Learner\"},{\"rid\":\"15\",\"name\":\"Platform administrator\"},{\"rid\":\"16\",\"name\":\"Support\"}],\"meta\":{\"totalPages\":1},\"links\":{\"self\":\"\\/api\\/v2\\/roles\"}}"
+              "body": "{\"data\":{\"rid\":\"7\",\"name\":\"Learner\"}}"
             }
           ]
         }
