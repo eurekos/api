@@ -112,14 +112,6 @@
           "_postman_id": "9209b01a-a91c-4479-a707-7aef0d2c0b4d",
           "name": "courses/:id",
           "request": {
-            "auth": {
-              "type": "oauth2",
-              "oauth2": {
-                "accessToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImIyNmI4YzFiMmUzMzZkNjFiMTc0MWZkZDMyZmI2NzMxMDRkZDU0ZjI3OWIxZDQxZTFmZTk1OGMzYzYwZGU0NTk1MWExZGU3NzcyY2Y3MzI0In0.eyJhdWQiOiI4MkI5QTQ3OC00MjNENEUwMy1BQUFGNjRDQy03ODQ5QUNEOS0xNzJFQTE5OCIsImp0aSI6ImIyNmI4YzFiMmUzMzZkNjFiMTc0MWZkZDMyZmI2NzMxMDRkZDU0ZjI3OWIxZDQxZTFmZTk1OGMzYzYwZGU0NTk1MWExZGU3NzcyY2Y3MzI0IiwiaWF0IjoxNTIxODkzMzc1LCJuYmYiOjE1MjE4OTMzNzUsImV4cCI6MTUyMTg5Mzk3NSwic3ViIjoiIiwic2NvcGVzIjpbImRlZmF1bHQiXX0.S758ZsWAN2Di37NGbCKhRHoV3pkUG_C04xa2jt2eMkGMPf9RuyfbFTGtLdTRbMSickUpdRYM8rFPdCzCYJNaGvOhCt-5NDzjxRyBjZUSICGTgXq18NRdNbEcw1KDs6eaO_sUg5FwhHD_BeqPdtjPs3aN49FtSQSXSwH-PJtLcgs",
-                "tokenType": "Bearer",
-                "addTokenTo": "header"
-              }
-            },
             "method": "GET",
             "header": [],
             "body": {},
