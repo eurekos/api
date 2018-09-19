@@ -731,14 +731,6 @@
           "_postman_id": "6f23b7c1-1264-4e70-8637-5249bf898db8",
           "name": "roles/:id",
           "request": {
-            "auth": {
-              "type": "oauth2",
-              "oauth2": {
-                "accessToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImJlMDQyMGIwM2JmZjc1NDQ4ZTFiNzhmZDVhZmZlOTA0OTMyYjZkMTdhMjk0NTU0ZmY2YTkwM2VjMzhjZmQ0ZGIxZDRjYTAxOWI0YWM0ZDBjIn0.eyJhdWQiOiI2QUMyMTFBMi1BQjEzRTg2MC04RTY0QzAxNS04QTQxNTJGOC0zNEI3MzIwRiIsImp0aSI6ImJlMDQyMGIwM2JmZjc1NDQ4ZTFiNzhmZDVhZmZlOTA0OTMyYjZkMTdhMjk0NTU0ZmY2YTkwM2VjMzhjZmQ0ZGIxZDRjYTAxOWI0YWM0ZDBjIiwiaWF0IjoxNTIxNzE0MTUxLCJuYmYiOjE1MjE3MTQxNTEsImV4cCI6MTUyMTcxNDc1MSwic3ViIjoiIiwic2NvcGVzIjpbImRlZmF1bHQiXX0.izkMedOYTIjGs_5gXq59nBPB-gHgJMpt1eJg2B7gu3WJPnXJwnTNAfIxvbsS4wzKje3xDpfs5nXL8TI_OOIWejwEVN5kpGG4e9-45RFYn6YG3E44LwCEclI2maHtUyIIj6EPm_5gsfHBdRj8E_yX8IYbw3A53FAxd83LCW0JJDWreUtzwHprbxDGhjAZ1mJKVu-7AJSa4eyWk1In9VhW8O5W4xvYYrwdOE2LvxOg0ZhKgZsJUjUZkdGQRoIJRw9k0w8XZLZfEETm6i1gBbKE-Z3Pt-HxuczCyltrW3sS9DnKPmK43OoHC_kl_XdLguveqyKiJdwNW3gHnYnIujuaoQ",
-                "tokenType": "Bearer",
-                "addTokenTo": "header"
-              }
-            },
             "method": "GET",
             "header": [
               {
@@ -747,7 +739,7 @@
               }
             ],
             "body": {},
-            "url": "{{domain}}/api/{{version}}/roles/2",
+            "url": "{{domain}}/api/{{version}}/roles/{{role_id}}",
             "description": "Roles data"
           },
           "response": [
