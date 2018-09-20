@@ -214,104 +214,19 @@
       "item": [
         {
           "_postman_id": "05806420-20e1-4311-8250-5cbd39d51052",
-          "name": "courses",
+          "name": "files",
           "request": {
             "method": "GET",
             "header": [],
             "body": {},
             "url": "{{domain}}/api/{{version}}/courses",
-            "description": "List of courses.\n\n#### Parameters  \n| Parameter name | Value | Description |\n| ------------- |----------- |------------|\n| author  | numeric | User ID of the course author. |\n| category | numeric | Term ID of the course category. |\n| order_by | string | A comma-separated list of sort keys. Valid keys are `changed` and `promotion`. |\n| sort | string | Sort order in case `order_by` specified. `asc` and `desc` are valid |"
+            "description": "List of files.\n\n#### Parameters  \n| Parameter name | Value | Description |\n| ------------- |----------- |------------|\n| author  | numeric | User ID of the course author. |\n| category | numeric | Term ID of the course category. |\n| order_by | string | A comma-separated list of sort keys. Valid keys are `changed` and `promotion`. |\n| sort | string | Sort order in case `order_by` specified. `asc` and `desc` are valid |"
           },
-          "response": [
-            {
-              "id": "b86cf15e-34d1-488c-a121-fc778cda7671",
-              "name": "courses",
-              "originalRequest": {
-                "method": "GET",
-                "header": [],
-                "body": {},
-                "url": "{{domain}}/api/{{version}}/courses"
-              },
-              "status": "OK",
-              "code": 200,
-              "_postman_previewlanguage": "json",
-              "header": [
-                {
-                  "key": "Cache-Control",
-                  "value": "no-cache, must-revalidate",
-                  "name": "Cache-Control",
-                  "description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
-                },
-                {
-                  "key": "Connection",
-                  "value": "keep-alive",
-                  "name": "Connection",
-                  "description": "Options that are desired for the connection"
-                },
-                {
-                  "key": "Content-Encoding",
-                  "value": "gzip",
-                  "name": "Content-Encoding",
-                  "description": "The type of encoding used on the data."
-                },
-                {
-                  "key": "Content-Type",
-                  "value": "application/json",
-                  "name": "Content-Type",
-                  "description": "The mime type of this content"
-                },
-                {
-                  "key": "Date",
-                  "value": "Wed, 19 Sep 2018 12:08:50 GMT",
-                  "name": "Date",
-                  "description": "The date and time that the message was sent"
-                },
-                {
-                  "key": "Expires",
-                  "value": "Sun, 19 Nov 1978 05:00:00 GMT",
-                  "name": "Expires",
-                  "description": "Gives the date/time after which the response is considered stale"
-                },
-                {
-                  "key": "Server",
-                  "value": "nginx/1.15.3",
-                  "name": "Server",
-                  "description": "A name for the server"
-                },
-                {
-                  "key": "Transfer-Encoding",
-                  "value": "chunked",
-                  "name": "Transfer-Encoding",
-                  "description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
-                },
-                {
-                  "key": "X-Content-Type-Options",
-                  "value": "nosniff",
-                  "name": "X-Content-Type-Options",
-                  "description": "The only defined value, \"nosniff\", prevents Internet Explorer from MIME-sniffing a response away from the declared content-type"
-                },
-                {
-                  "key": "X-Powered-By",
-                  "value": "PHP/7.0.32",
-                  "name": "X-Powered-By",
-                  "description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
-                },
-                {
-                  "key": "X-UA-Compatible",
-                  "value": "IE=edge",
-                  "name": "X-UA-Compatible",
-                  "description": "Custom header"
-                }
-              ],
-              "cookie": [],
-              "responseTime": null,
-              "body": "{\n    \"data\": [\n        {\n            \"nid\": \"4418\",\n            \"title\": \"Change Management\u2122 Foundation - DK\",\n            \"description\": \"\",\n            \"path\": \"/module/change-managementtm-foundation-dk\",\n            \"module\": \"change_managementtm_foundation_-_dk\",\n            \"language\": \"en\",\n            \"author\": \"0\",\n            \"author_name\": \"Anonym\",\n            \"created\": \"1537258509\",\n            \"changed\": \"1537259235\",\n            \"status\": \"1\",\n            \"promotion\": \"0\",\n            \"labels\": [],\n            \"picture\": \"45950\",\n            \"job_functions\": [\n                \"3379\"\n            ],\n            \"categories\": [\n                \"3378\"\n            ],\n            \"course_types\": [\n                \"3484\"\n            ],\n            \"other\": [\n                \"3419\"\n            ]\n        },\n        {\n            \"nid\": \"4424\",\n            \"title\": \"Combi scorm\",\n            \"description\": \"Combi scorm course\",\n            \"path\": \"/module/combi-scorm\",\n            \"module\": \"combi_scorm\",\n            \"language\": \"en\",\n            \"author\": \"37479\",\n            \"author_name\": \"Nick Etlar Eriksen\",\n            \"created\": \"1537358769\",\n            \"changed\": \"1537358782\",\n            \"status\": \"1\",\n            \"promotion\": \"0\",\n            \"labels\": [\n                \"combi\"\n            ],\n            \"picture\": \"45387\",\n            \"job_functions\": [\n                \"3422\"\n            ],\n            \"categories\": [\n                \"3378\"\n            ],\n            \"course_types\": [\n                \"3488\"\n            ],\n            \"other\": [\n                \"3419\"\n            ]\n        }\n    ],\n    \"meta\": {\n        \"totalPages\": 1\n    },\n    \"links\": {\n        \"self\": \"/api/v2/courses\"\n    }\n}"
-            }
-          ]
+          "response": []
         },
         {
           "_postman_id": "f69f84e3-05f9-41c3-bea8-ac20a7803c90",
-          "name": "courses/:id",
+          "name": "files/:id",
           "request": {
             "method": "GET",
             "header": [],
