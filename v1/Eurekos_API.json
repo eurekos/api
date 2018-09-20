@@ -19,7 +19,7 @@
             "header": [],
             "body": {},
             "url": "{{domain}}/api/{{version}}/courses",
-            "description": "List of courses.\n\nAdditional query parameters:\n- author (numeric). User ID of the course author.\n- category (numeric). Term ID of the course category.\n- order_by (string). Allowed values are `changed` and `promotion`.\n- sort (string). Allowed values are `asc` and `desc`."
+            "description": "List of courses.\n\n#### Parameters  \n| Parameter name | Value | Description |\n| ------------- |----------- |------------|\n| author  | numeric | User ID of the course author. |\n| category | numeric | Term ID of the course category. |\n| order_by | string | A comma-separated list of sort keys. Valid keys are `changed` and `promotion`. |\n| sort | string | Sort order in case order_by specified. `asc` and `desc` are valid |"
           },
           "response": [
             {
@@ -839,7 +839,7 @@
     },
     {
       "_postman_id": "46b191a7-66eb-4fcc-8e36-093a7d31341b",
-      "name": "Classes (deprecated)",
+      "name": "Classes (DEPRECATED)",
       "description": "",
       "item": [
         {
