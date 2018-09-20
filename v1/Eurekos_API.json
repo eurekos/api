@@ -214,7 +214,7 @@
       "item": [
         {
           "_postman_id": "05806420-20e1-4311-8250-5cbd39d51052",
-          "name": "files",
+          "name": "images",
           "request": {
             "method": "GET",
             "header": [],
