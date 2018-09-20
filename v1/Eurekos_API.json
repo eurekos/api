@@ -204,18 +204,6 @@
               "body": "{\"data\":{\"nid\":\"4424\",\"title\":\"Combi scorm\",\"description\":\"Combi scorm course\",\"path\":\"\\/module\\/combi-scorm\",\"module\":\"combi_scorm\",\"language\":\"en\",\"author\":\"37479\",\"author_name\":\"Nick Etlar Eriksen\",\"created\":\"1537358769\",\"changed\":\"1537358782\",\"status\":\"1\",\"promotion\":null,\"labels\":[],\"picture\":\"45387\",\"job_functions\":[\"3422\"],\"categories\":[\"3378\"],\"course_types\":[\"3488\"],\"other\":[\"3419\"]}}"
             }
           ]
-        },
-        {
-          "_postman_id": "b8a745a2-c7db-4100-a5af-9faf26e1394f",
-          "name": "courses/:id/description",
-          "request": {
-            "method": "GET",
-            "header": [],
-            "body": {},
-            "url": "{{domain}}/api/{{version}}/courses/{{course_id}}/description",
-            "description": "DEPRECATED. Course description data"
-          },
-          "response": []
         }
       ]
     },
