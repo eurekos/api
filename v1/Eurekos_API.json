@@ -19,7 +19,7 @@
             "header": [],
             "body": {},
             "url": "{{domain}}/api/{{version}}/courses",
-            "description": "List of courses.\n\n#### Parameters  \n| Parameter name | Value | Description |\n| ------------- |----------- |------------|\n| author  | numeric | User ID of the course author. |\n| category | numeric | Term ID of the course category. |\n| order_by | string | A comma-separated list of sort keys. Valid keys are `changed` and `promotion`. |\n| sort | string | Sort order in case order_by specified. `asc` and `desc` are valid |"
+            "description": "List of courses.\n\n#### Parameters  \n| Parameter name | Value | Description |\n| ------------- |----------- |------------|\n| author  | numeric | User ID of the course author. |\n| category | numeric | Term ID of the course category. |\n| order_by | string | A comma-separated list of sort keys. Valid keys are `changed` and `promotion`. |\n| sort | string | Sort order in case `order_by` specified. `asc` and `desc` are valid |"
           },
           "response": [
             {
