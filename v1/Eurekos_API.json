@@ -208,122 +208,6 @@
       ]
     },
     {
-      "_postman_id": "7283578d-99ac-4c46-8c07-acee36568891",
-      "name": "Images",
-      "description": "",
-      "item": [
-        {
-          "_postman_id": "05806420-20e1-4311-8250-5cbd39d51052",
-          "name": "images",
-          "request": {
-            "method": "GET",
-            "header": [],
-            "body": {},
-            "url": "{{domain}}/api/{{version}}/courses",
-            "description": "List of files.\n\n#### Parameters  \n| Parameter name | Value | Description |\n| ------------- |----------- |------------|\n| author  | numeric | User ID of the course author. |\n| category | numeric | Term ID of the course category. |\n| order_by | string | A comma-separated list of sort keys. Valid keys are `changed` and `promotion`. |\n| sort | string | Sort order in case `order_by` specified. `asc` and `desc` are valid |"
-          },
-          "response": []
-        },
-        {
-          "_postman_id": "f69f84e3-05f9-41c3-bea8-ac20a7803c90",
-          "name": "images/:id",
-          "request": {
-            "method": "GET",
-            "header": [],
-            "body": {},
-            "url": "{{domain}}/api/{{version}}/courses/{{course_id}}",
-            "description": "Course data"
-          },
-          "response": [
-            {
-              "id": "803fcc49-ca3c-4a54-b347-ea7c2f84c2a3",
-              "name": "courses/:id",
-              "originalRequest": {
-                "method": "GET",
-                "header": [],
-                "body": {},
-                "url": "{{domain}}/api/{{version}}/courses/{{course_id}}"
-              },
-              "status": "OK",
-              "code": 200,
-              "_postman_previewlanguage": "json",
-              "header": [
-                {
-                  "key": "Cache-Control",
-                  "value": "no-cache, must-revalidate",
-                  "name": "Cache-Control",
-                  "description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
-                },
-                {
-                  "key": "Connection",
-                  "value": "keep-alive",
-                  "name": "Connection",
-                  "description": "Options that are desired for the connection"
-                },
-                {
-                  "key": "Content-Encoding",
-                  "value": "gzip",
-                  "name": "Content-Encoding",
-                  "description": "The type of encoding used on the data."
-                },
-                {
-                  "key": "Content-Type",
-                  "value": "application/json",
-                  "name": "Content-Type",
-                  "description": "The mime type of this content"
-                },
-                {
-                  "key": "Date",
-                  "value": "Wed, 19 Sep 2018 12:16:51 GMT",
-                  "name": "Date",
-                  "description": "The date and time that the message was sent"
-                },
-                {
-                  "key": "Expires",
-                  "value": "Sun, 19 Nov 1978 05:00:00 GMT",
-                  "name": "Expires",
-                  "description": "Gives the date/time after which the response is considered stale"
-                },
-                {
-                  "key": "Server",
-                  "value": "nginx/1.15.3",
-                  "name": "Server",
-                  "description": "A name for the server"
-                },
-                {
-                  "key": "Transfer-Encoding",
-                  "value": "chunked",
-                  "name": "Transfer-Encoding",
-                  "description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
-                },
-                {
-                  "key": "X-Content-Type-Options",
-                  "value": "nosniff",
-                  "name": "X-Content-Type-Options",
-                  "description": "The only defined value, \"nosniff\", prevents Internet Explorer from MIME-sniffing a response away from the declared content-type"
-                },
-                {
-                  "key": "X-Powered-By",
-                  "value": "PHP/7.0.32",
-                  "name": "X-Powered-By",
-                  "description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
-                },
-                {
-                  "key": "X-UA-Compatible",
-                  "value": "IE=edge",
-                  "name": "X-UA-Compatible",
-                  "description": "Custom header"
-                }
-              ],
-              "cookie": [],
-              "responseTime": null,
-              "body": "{\"data\":{\"nid\":\"4424\",\"title\":\"Combi scorm\",\"description\":\"Combi scorm course\",\"path\":\"\\/module\\/combi-scorm\",\"module\":\"combi_scorm\",\"language\":\"en\",\"author\":\"37479\",\"author_name\":\"Nick Etlar Eriksen\",\"created\":\"1537358769\",\"changed\":\"1537358782\",\"status\":\"1\",\"promotion\":null,\"labels\":[],\"picture\":\"45387\",\"job_functions\":[\"3422\"],\"categories\":[\"3378\"],\"course_types\":[\"3488\"],\"other\":[\"3419\"]}}"
-            }
-          ]
-        }
-      ]
-    },
-    {
       "_postman_id": "597ae733-00b2-4035-8eda-58ea19f7c8ba",
       "name": "Users",
       "description": null,
@@ -1517,12 +1401,133 @@
           "response": []
         }
       ]
+    },
+    {
+      "_postman_id": "7283578d-99ac-4c46-8c07-acee36568891",
+      "name": "Images",
+      "description": "",
+      "item": [
+        {
+          "_postman_id": "05806420-20e1-4311-8250-5cbd39d51052",
+          "name": "images",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {},
+            "url": "{{domain}}/api/{{version}}/images",
+            "description": "List of files.\n\n#### Parameters  \n| Parameter name | Value | Description |\n| ------------- |----------- |------------|\n| author  | numeric | User ID of the course author. |\n| order_by | string | A comma-separated list of sort keys. Valid keys are `changed` and `promotion`. |\n| sort | string | Sort order in case `order_by` specified. `asc` and `desc` are valid |"
+          },
+          "response": []
+        },
+        {
+          "_postman_id": "f69f84e3-05f9-41c3-bea8-ac20a7803c90",
+          "name": "images/:id",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "image/png"
+              }
+            ],
+            "body": {},
+            "url": "{{domain}}/api/{{version}}/images/{{image_id}}",
+            "description": "Course data"
+          },
+          "response": [
+            {
+              "id": "803fcc49-ca3c-4a54-b347-ea7c2f84c2a3",
+              "name": "courses/:id",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "body": {},
+                "url": "{{domain}}/api/{{version}}/courses/{{course_id}}"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache, must-revalidate",
+                  "name": "Cache-Control",
+                  "description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive",
+                  "name": "Connection",
+                  "description": "Options that are desired for the connection"
+                },
+                {
+                  "key": "Content-Encoding",
+                  "value": "gzip",
+                  "name": "Content-Encoding",
+                  "description": "The type of encoding used on the data."
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "name": "Content-Type",
+                  "description": "The mime type of this content"
+                },
+                {
+                  "key": "Date",
+                  "value": "Wed, 19 Sep 2018 12:16:51 GMT",
+                  "name": "Date",
+                  "description": "The date and time that the message was sent"
+                },
+                {
+                  "key": "Expires",
+                  "value": "Sun, 19 Nov 1978 05:00:00 GMT",
+                  "name": "Expires",
+                  "description": "Gives the date/time after which the response is considered stale"
+                },
+                {
+                  "key": "Server",
+                  "value": "nginx/1.15.3",
+                  "name": "Server",
+                  "description": "A name for the server"
+                },
+                {
+                  "key": "Transfer-Encoding",
+                  "value": "chunked",
+                  "name": "Transfer-Encoding",
+                  "description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff",
+                  "name": "X-Content-Type-Options",
+                  "description": "The only defined value, \"nosniff\", prevents Internet Explorer from MIME-sniffing a response away from the declared content-type"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/7.0.32",
+                  "name": "X-Powered-By",
+                  "description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+                },
+                {
+                  "key": "X-UA-Compatible",
+                  "value": "IE=edge",
+                  "name": "X-UA-Compatible",
+                  "description": "Custom header"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\"data\":{\"nid\":\"4424\",\"title\":\"Combi scorm\",\"description\":\"Combi scorm course\",\"path\":\"\\/module\\/combi-scorm\",\"module\":\"combi_scorm\",\"language\":\"en\",\"author\":\"37479\",\"author_name\":\"Nick Etlar Eriksen\",\"created\":\"1537358769\",\"changed\":\"1537358782\",\"status\":\"1\",\"promotion\":null,\"labels\":[],\"picture\":\"45387\",\"job_functions\":[\"3422\"],\"categories\":[\"3378\"],\"course_types\":[\"3488\"],\"other\":[\"3419\"]}}"
+            }
+          ]
+        }
+      ]
     }
   ],
   "auth": {
     "type": "oauth2",
     "oauth2": {
-      "accessToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImFhOWZjYzRhMjU1NTIyZmMzNGE0YTYyZTZkYTlmNjRiYjg1OTg5MmNkOGZjMjIyMzE2NzA1NTE3NGEwZGRjYzNjYzg4MGVlMTBjYmFjYWE1In0.eyJhdWQiOiJGNzhFRkYzNi0yNEVBREEyQi0yRUNCRDA5OS04QjRFREEzMy05Q0UyNTdDRSIsImp0aSI6ImFhOWZjYzRhMjU1NTIyZmMzNGE0YTYyZTZkYTlmNjRiYjg1OTg5MmNkOGZjMjIyMzE2NzA1NTE3NGEwZGRjYzNjYzg4MGVlMTBjYmFjYWE1IiwiaWF0IjoxNTM3NDczMDk0LCJuYmYiOjE1Mzc0NzMwOTQsImV4cCI6MTUzNzQ3MzY5NCwic3ViIjoiIiwic2NvcGVzIjpbImRlZmF1bHQiLCJjb3Vyc2VzLnJlYWQiLCJ0YXhvbm9teV90ZXJtcy5yZWFkIiwicm9sZXMucmVhZCIsImltYWdlcy5yZWFkIl19.ekR86YgsTVDWJdYWd6ns04d1q9lfTd6kZ_8tqtol8SHMQjMRG3gAGs-peb4L6ah8hnwAYyW9EkSNDeZwNP3LZfL2fQfUiFX2ryy0xs1HekV3jCVfzsvxXhH6MPf12gt4_HMvMSd8Ug6AGKMGD1BeUYdT7A9gnkmn2h_mSvx8CL-Cxm2cWCsu0wGXX9uFoxxiIB2906rcBbiIdS0515js8ZAoHP1xEAI0E7guXkTbmXzeeAlCgSmIiBipuzqVT8XReynwkrUSmFRjrzllZcb8J5gs5OHLVRiXO2O7mqhOj1Go3IAMpno-QmKD5HqE8XSupL8Y1E61ukBfXFCycqQDfQ",
+      "accessToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImQ2OWQyN2NmNWRiNzk5MjkyMzIzNDZjZDE3MDBmODA4MWYxZjg1M2E1MWZlNmEyMWVmMTBkZTljNWY1YTY3YzgyNGI1Yzk4MjVjMjg1NjAzIn0.eyJhdWQiOiJGNzhFRkYzNi0yNEVBREEyQi0yRUNCRDA5OS04QjRFREEzMy05Q0UyNTdDRSIsImp0aSI6ImQ2OWQyN2NmNWRiNzk5MjkyMzIzNDZjZDE3MDBmODA4MWYxZjg1M2E1MWZlNmEyMWVmMTBkZTljNWY1YTY3YzgyNGI1Yzk4MjVjMjg1NjAzIiwiaWF0IjoxNTM3NDc2MTY4LCJuYmYiOjE1Mzc0NzYxNjgsImV4cCI6MTUzNzQ3Njc2OCwic3ViIjoiIiwic2NvcGVzIjpbImRlZmF1bHQiLCJjb3Vyc2VzLnJlYWQiLCJ0YXhvbm9teV90ZXJtcy5yZWFkIiwicm9sZXMucmVhZCIsImltYWdlcy5yZWFkIl19.Sd7eAB-xPYeV5Htr_g1mCyiusMAmayRzILW2s_B534b3tC_PsGYdIsVmee0tKIEix5CgvMSxsNygHBSBWBDcrpT8TssHXQQcglhz5ODeZsrFZl2rxoeFPUEo9yl1SHUPq-IktiuaFON9d5dedJQELKPv5u5I2i4jxWaxL-5NNPtFGI-4qjIWcjXyGnml1yTkGx0iFamXhgXb8Bayz2WWkQ9Agck8FTivCG1XNO-IU3lpMGinE8ib-uPB49eQxsmzgJVLwpE2nLtLd45809EtvboHT9wXXx07Xu-Xt2x0YUdP7I-OCXSe1iV_qpULzgOZgglfq5WmFBgL19PfKLdZqQ",
       "tokenType": "Bearer",
       "addTokenTo": "header"
     }
