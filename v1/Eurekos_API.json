@@ -214,7 +214,7 @@
       "item": [
         {
           "_postman_id": "35336c76-dada-4346-a8da-8619c82eb430",
-          "name": "courses",
+          "name": "resources/file",
           "request": {
             "method": "GET",
             "header": [],
