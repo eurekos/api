@@ -1415,7 +1415,7 @@
             "header": [],
             "body": {},
             "url": "{{domain}}/api/{{version}}/resources/file/{{file_id}}",
-            "description": "File resource.\n\n#### Parameters  \n| Parameter name | Value | Description |\n| ------------- |----------- |------------|\n| author  | numeric | User ID of the course author. |\n| order_by | string | A comma-separated list of sort keys. Valid keys are `created` and `id`. |\n| sort | string | Sort order in case `order_by` specified. `asc` and `desc` are valid |"
+            "description": "File resource.\n\n#### Parameters  \n| Parameter name | Value | Description |\n| ------------- |----------- |------------|\n| author  | numeric | User ID of the course author. |\n| order_by | string | A comma-separated list of sort keys. Valid keys are `created` and `id`. |\n| sort | string | Sort order in case `order_by` specified. `asc` and `desc` are valid |\n| image\\_style | string | Returns image processed with image style. Currently only `dashboard_course` is allowed. Applicable only if resource type is image. |"
           },
           "response": [
             {
