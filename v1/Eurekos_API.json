@@ -1287,7 +1287,7 @@
             "header": [],
             "body": {},
             "url": "{{domain}}/api/v2/taxonomy_terms",
-            "description": "List of taxonomy terms\n\nParameters:\nbundle,\nsearch,\npage."
+            "description": "List of taxonomy terms\n\n### Scope\n`taxonomy_terms.read`\n\nParameters:\nbundle,\nsearch,\npage."
           },
           "response": [
             {
