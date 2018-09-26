@@ -23,7 +23,7 @@
           },
           "response": [
             {
-              "id": "9bc1db95-1f71-4ee4-a6c0-61cfc13fb8fc",
+              "id": "ea3951c1-1435-4d81-8d50-428100830f07",
               "name": "courses",
               "originalRequest": {
                 "method": "GET",
@@ -61,7 +61,7 @@
                 },
                 {
                   "key": "Date",
-                  "value": "Wed, 19 Sep 2018 12:08:50 GMT",
+                  "value": "Wed, 26 Sep 2018 10:10:01 GMT",
                   "name": "Date",
                   "description": "The date and time that the message was sent"
                 },
@@ -102,9 +102,19 @@
                   "description": "Custom header"
                 }
               ],
-              "cookie": [],
+              "cookie": [
+                {
+                  "expires": "Sun Oct 14 2018 00:18:25 GMT+0000 (UTC)",
+                  "httpOnly": true,
+                  "domain": "marketplace.art",
+                  "path": "/",
+                  "secure": false,
+                  "value": "yhKx651QiupDh1bfUe8KXTUSYie7ZwRoBjMQggv6ei4",
+                  "key": "SESS0f09e0327417b9a653f4e3b8b9faccd8"
+                }
+              ],
               "responseTime": null,
-              "body": "{\n    \"data\": [\n        {\n            \"nid\": \"4418\",\n            \"title\": \"Change Management\u2122 Foundation - DK\",\n            \"description\": \"\",\n            \"url\": \"https://example.com/module/change-managementtm-foundation-dk\",\n            \"module\": \"change_managementtm_foundation_-_dk\",\n            \"language\": \"en\",\n            \"author\": \"0\",\n            \"author_name\": \"Anonym\",\n            \"created\": \"1537258509\",\n            \"changed\": \"1537259235\",\n            \"status\": \"1\",\n            \"promotion\": \"0\",\n            \"labels\": [],\n            \"picture\": \"45950\",\n            \"job_functions\": [\n                \"3379\"\n            ],\n            \"categories\": [\n                \"3378\"\n            ],\n            \"course_types\": [\n                \"3484\"\n            ],\n            \"other\": [\n                \"3419\"\n            ]\n        },\n        {\n            \"nid\": \"4424\",\n            \"title\": \"Combi scorm\",\n            \"description\": \"Combi scorm course\",\n            \"url\": \"https://example.com/module/combi-scorm\",\n            \"module\": \"combi_scorm\",\n            \"language\": \"en\",\n            \"author\": \"37479\",\n            \"author_name\": \"Nick Etlar Eriksen\",\n            \"created\": \"1537358769\",\n            \"changed\": \"1537358782\",\n            \"status\": \"1\",\n            \"promotion\": \"0\",\n            \"labels\": [\n                \"combi\"\n            ],\n            \"picture\": \"45387\",\n            \"job_functions\": [\n                \"3422\"\n            ],\n            \"categories\": [\n                \"3378\"\n            ],\n            \"course_types\": [\n                \"3488\"\n            ],\n            \"other\": [\n                \"3419\"\n            ]\n        }\n    ],\n    \"meta\": {\n        \"totalPages\": 1\n    },\n    \"links\": {\n        \"self\": \"/api/v2/courses\"\n    }\n}"
+              "body": "{\n    \"data\": [\n        {\n            \"nid\": 4081,\n            \"title\": \"Click\",\n            \"description\": \"Simple course\",\n            \"url\": \"http://example.com/module/klik-redigere\",\n            \"module\": \"click\",\n            \"language\": \"da\",\n            \"author\": 37428,\n            \"author_name\": \"teacher\",\n            \"created\": 1533906059,\n            \"changed\": 1537954464,\n            \"status\": true,\n            \"promotion\": false,\n            \"labels\": [],\n            \"picture\": 45387,\n            \"job_functions\": [\n                3379,\n                3422,\n                3423\n            ],\n            \"categories\": [\n                3378,\n                3425,\n                3426\n            ],\n            \"course_types\": [\n                3486\n            ],\n            \"other\": [\n                3380\n            ]\n        },\n        {\n            \"nid\": 4083,\n            \"title\": \"Clone of click\",\n            \"description\": null,\n            \"url\": \"http://example.com/module/clone-klik-redigere\",\n            \"module\": \"click-clone-1\",\n            \"language\": \"da\",\n            \"author\": 1,\n            \"author_name\": \"Eurekos administrator\",\n            \"created\": 1537784422,\n            \"changed\": 1537784422,\n            \"status\": true,\n            \"promotion\": true,\n            \"labels\": [],\n            \"picture\": 45387,\n            \"job_functions\": [\n                3379\n            ],\n            \"categories\": [\n                3378\n            ],\n            \"course_types\": [\n                3486\n            ],\n            \"other\": [\n                3380\n            ]\n        },\n        {\n            \"nid\": 4085,\n            \"title\": \"Combi\",\n            \"description\": \"DESCR\",\n            \"url\": \"http://example.com/module/combi\",\n            \"module\": \"combi\",\n            \"language\": \"en\",\n            \"author\": 1,\n            \"author_name\": \"Eurekos administrator\",\n            \"created\": 1537784606,\n            \"changed\": 1537863108,\n            \"status\": true,\n            \"promotion\": false,\n            \"labels\": [\n                \"combi\"\n            ],\n            \"picture\": 45387,\n            \"job_functions\": [\n                3422\n            ],\n            \"categories\": [\n                3425\n            ],\n            \"course_types\": [\n                3488\n            ],\n            \"other\": [\n                3487\n            ]\n        }\n    ],\n    \"meta\": {\n        \"totalPages\": 1\n    },\n    \"links\": {\n        \"self\": \"/api/v2/courses\"\n    }\n}"
             }
           ]
         },
@@ -120,7 +130,7 @@
           },
           "response": [
             {
-              "id": "0dc1af7e-f8e1-48d3-a13d-1cd820be8ce6",
+              "id": "0ee3f4ba-3e9d-406d-ad96-de6932a93872",
               "name": "courses/:id",
               "originalRequest": {
                 "method": "GET",
@@ -158,7 +168,7 @@
                 },
                 {
                   "key": "Date",
-                  "value": "Wed, 19 Sep 2018 12:16:51 GMT",
+                  "value": "Wed, 26 Sep 2018 10:11:36 GMT",
                   "name": "Date",
                   "description": "The date and time that the message was sent"
                 },
@@ -199,9 +209,19 @@
                   "description": "Custom header"
                 }
               ],
-              "cookie": [],
+              "cookie": [
+                {
+                  "expires": "Sun Oct 14 2018 00:18:25 GMT+0000 (UTC)",
+                  "httpOnly": true,
+                  "domain": "marketplace.art",
+                  "path": "/",
+                  "secure": false,
+                  "value": "yhKx651QiupDh1bfUe8KXTUSYie7ZwRoBjMQggv6ei4",
+                  "key": "SESS0f09e0327417b9a653f4e3b8b9faccd8"
+                }
+              ],
               "responseTime": null,
-              "body": "{\n    \"data\": {\n        \"nid\": \"4424\",\n        \"title\": \"Combi scorm\",\n        \"description\": \"Combi scorm course\",\n        \"url\": \"https://example.com/module/combi-scorm\",\n        \"module\": \"combi_scorm\",\n        \"language\": \"en\",\n        \"author\": \"37479\",\n        \"author_name\": \"Nick Etlar Eriksen\",\n        \"created\": \"1537358769\",\n        \"changed\": \"1537358782\",\n        \"status\": \"1\",\n        \"promotion\": null,\n        \"labels\": [],\n        \"picture\": \"45387\",\n        \"job_functions\": [\n            \"3422\"\n        ],\n        \"categories\": [\n            \"3378\"\n        ],\n        \"course_types\": [\n            \"3488\"\n        ],\n        \"other\": [\n            \"3419\"\n        ]\n    }\n}"
+              "body": "{\n    \"data\": {\n        \"nid\": 4085,\n        \"title\": \"Combi\",\n        \"description\": \"DESCR\",\n        \"url\": \"http://example.com/module/combi\",\n        \"module\": \"combi\",\n        \"language\": \"en\",\n        \"author\": 1,\n        \"author_name\": \"Eurekos administrator\",\n        \"created\": 1537784606,\n        \"changed\": 1537863108,\n        \"status\": true,\n        \"promotion\": false,\n        \"labels\": [\n            \"combi\"\n        ],\n        \"picture\": 45387,\n        \"job_functions\": [\n            3422\n        ],\n        \"categories\": [\n            3425\n        ],\n        \"course_types\": [\n            3488\n        ],\n        \"other\": [\n            3487\n        ]\n    }\n}"
             }
           ]
         }
@@ -1287,11 +1307,11 @@
             "header": [],
             "body": {},
             "url": "{{domain}}/api/v2/taxonomy_terms",
-            "description": "List of taxonomy terms\n\n### Scope\n`taxonomy_terms.read`\n\n#### Parameters  \n| Parameter name | Value | Description |\n| ------------- |----------- |------------|\n| search  | string | Term name. |\n| bundle  | string | Taxonomy term bundle. You may specify multiple values E.g. `bundle[]=bundle1&bundle[]=bundle2` |"
+            "description": "List of taxonomy terms\n\n### Scope\n`taxonomy_terms.read`\n\n#### Parameters  \n| Parameter name | Value | Description |\n| ------------- |----------- |------------|\n| search  | string | Term name. |\n| machine\\_name  | string | Taxonomy term bundle. You may specify multiple values E.g. `machine_name[]=example&machine_name[]=example2` |\n| language  | string | Language code E.g. language=en. |"
           },
           "response": [
             {
-              "id": "b60f8f70-4bc4-403a-b468-c32f5f92b050",
+              "id": "0f0f3fa9-9adf-4b55-ae9e-aa821cde24a8",
               "name": "taxonomy_terms",
               "originalRequest": {
                 "method": "GET",
@@ -1302,10 +1322,87 @@
               "status": "OK",
               "code": 200,
               "_postman_previewlanguage": "json",
-              "header": [],
-              "cookie": [],
+              "header": [
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache, must-revalidate",
+                  "name": "Cache-Control",
+                  "description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive",
+                  "name": "Connection",
+                  "description": "Options that are desired for the connection"
+                },
+                {
+                  "key": "Content-Encoding",
+                  "value": "gzip",
+                  "name": "Content-Encoding",
+                  "description": "The type of encoding used on the data."
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "name": "Content-Type",
+                  "description": "The mime type of this content"
+                },
+                {
+                  "key": "Date",
+                  "value": "Wed, 26 Sep 2018 10:06:46 GMT",
+                  "name": "Date",
+                  "description": "The date and time that the message was sent"
+                },
+                {
+                  "key": "Expires",
+                  "value": "Sun, 19 Nov 1978 05:00:00 GMT",
+                  "name": "Expires",
+                  "description": "Gives the date/time after which the response is considered stale"
+                },
+                {
+                  "key": "Server",
+                  "value": "nginx/1.15.3",
+                  "name": "Server",
+                  "description": "A name for the server"
+                },
+                {
+                  "key": "Transfer-Encoding",
+                  "value": "chunked",
+                  "name": "Transfer-Encoding",
+                  "description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff",
+                  "name": "X-Content-Type-Options",
+                  "description": "The only defined value, \"nosniff\", prevents Internet Explorer from MIME-sniffing a response away from the declared content-type"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "PHP/7.0.32",
+                  "name": "X-Powered-By",
+                  "description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+                },
+                {
+                  "key": "X-UA-Compatible",
+                  "value": "IE=edge",
+                  "name": "X-UA-Compatible",
+                  "description": "Custom header"
+                }
+              ],
+              "cookie": [
+                {
+                  "expires": "Sun Oct 14 2018 00:18:25 GMT+0000 (UTC)",
+                  "httpOnly": true,
+                  "domain": "marketplace.art",
+                  "path": "/",
+                  "secure": false,
+                  "value": "yhKx651QiupDh1bfUe8KXTUSYie7ZwRoBjMQggv6ei4",
+                  "key": "SESS0f09e0327417b9a653f4e3b8b9faccd8"
+                }
+              ],
               "responseTime": null,
-              "body": "{\n    \"data\": [\n        {\n            \"tid\": \"4202\",\n            \"vid\": \"18\",\n            \"name\": \"Online\",\n            \"weight\": \"0\",\n            \"bundle\": \"Other\"\n        },\n        {\n            \"tid\": \"3461\",\n            \"vid\": \"12\",\n            \"name\": \"Food & Nutrition\",\n            \"weight\": \"0\",\n            \"description\": \"\",\n            \"bundle\": \"Job function\"\n        },\n        {\n            \"tid\": \"3462\",\n            \"vid\": \"12\",\n            \"name\": \"Data Analysis & Statistics\",\n            \"weight\": \"0\",\n            \"description\": \"\",\n            \"bundle\": \"Job function\"\n        },\n        {\n            \"tid\": \"4243\",\n            \"vid\": \"11\",\n            \"name\": \"Classroom\",\n            \"weight\": \"0\",\n            \"bundle\": \"Course type\"\n        },\n        {\n            \"tid\": \"4244\",\n            \"vid\": \"11\",\n            \"name\": \"Blended\",\n            \"weight\": \"0\",\n            \"bundle\": \"Course type\"\n        },\n        {\n            \"tid\": \"4505\",\n            \"vid\": \"13\",\n            \"name\": \"Arts & Culture\",\n            \"weight\": \"10\",\n            \"bundle\": \"Category\"\n        },\n        {\n            \"tid\": \"4360\",\n            \"vid\": \"13\",\n            \"name\": \"Personal development\",\n            \"weight\": \"11\",\n            \"bundle\": \"Category\"\n        }\n    ],\n    \"meta\": {\n        \"totalPages\": 1\n    },\n    \"links\": {\n        \"self\": \"/api/v2/taxonomy_terms\"\n    }\n}"
+              "body": "{\"data\":[{\"tid\":\"3378\",\"vid\":\"13\",\"name\":\"Experiments and fun\",\"weight\":\"0\",\"description\":\"\",\"vocabulary_name\":\"Category\",\"machine_name\":\"categories\"},{\"tid\":\"3379\",\"vid\":\"12\",\"name\":\"Demo user\",\"weight\":\"0\",\"description\":\"\",\"vocabulary_name\":\"Job funktion\",\"machine_name\":\"job_functions\"},{\"tid\":\"3380\",\"vid\":\"17\",\"name\":\"Mandatory\",\"weight\":\"0\",\"description\":\"\",\"vocabulary_name\":\"Importance\",\"machine_name\":\"other\"},{\"tid\":\"3419\",\"vid\":\"17\",\"name\":\"Accreditation\",\"weight\":\"0\",\"description\":\"\",\"vocabulary_name\":\"Importance\",\"machine_name\":\"other\"},{\"tid\":\"3420\",\"vid\":\"17\",\"name\":\"Skills improvement\",\"weight\":\"0\",\"description\":\"\",\"vocabulary_name\":\"Importance\",\"machine_name\":\"other\"},{\"tid\":\"3421\",\"vid\":\"17\",\"name\":\"Compliance\",\"weight\":\"0\",\"description\":\"\",\"vocabulary_name\":\"Importance\",\"machine_name\":\"other\"},{\"tid\":\"3422\",\"vid\":\"12\",\"name\":\"Technical specialist\",\"weight\":\"0\",\"description\":\"\",\"vocabulary_name\":\"Job funktion\",\"machine_name\":\"job_functions\"},{\"tid\":\"3423\",\"vid\":\"12\",\"name\":\"Project Manager\",\"weight\":\"0\",\"description\":\"\",\"vocabulary_name\":\"Job funktion\",\"machine_name\":\"job_functions\"},{\"tid\":\"3425\",\"vid\":\"13\",\"name\":\"Project Management\",\"weight\":\"0\",\"description\":\"\",\"vocabulary_name\":\"Category\",\"machine_name\":\"categories\"},{\"tid\":\"3426\",\"vid\":\"13\",\"name\":\"World themes\",\"weight\":\"0\",\"description\":\"\",\"vocabulary_name\":\"Category\",\"machine_name\":\"categories\"},{\"tid\":\"3484\",\"vid\":\"11\",\"name\":\"Classroom\",\"weight\":\"0\",\"vocabulary_name\":\"Course types\",\"machine_name\":\"course_types\"},{\"tid\":\"3485\",\"vid\":\"11\",\"name\":\"Blended\",\"weight\":\"0\",\"vocabulary_name\":\"Course types\",\"machine_name\":\"course_types\"},{\"tid\":\"3486\",\"vid\":\"11\",\"name\":\"Online\",\"weight\":\"0\",\"vocabulary_name\":\"Course types\",\"machine_name\":\"course_types\"},{\"tid\":\"3487\",\"vid\":\"17\",\"name\":\"Havo 3\",\"weight\":\"0\",\"vocabulary_name\":\"Importance\",\"machine_name\":\"other\"},{\"tid\":\"3488\",\"vid\":\"11\",\"name\":\"Webinar\",\"weight\":\"0\",\"vocabulary_name\":\"Course types\",\"machine_name\":\"course_types\"}],\"meta\":{\"totalPages\":1},\"links\":{\"self\":\"\\/api\\/v2\\/taxonomy_terms\"}}"
             }
           ]
         },
