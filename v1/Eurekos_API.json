@@ -621,7 +621,7 @@
             ],
             "body": {},
             "url": "{{domain}}/api/{{version}}/roles",
-            "description": "Roles data"
+            "description": "List of roles\n\n### Scope\n`roles.read`"
           },
           "response": [
             {
