@@ -1307,7 +1307,7 @@
             "header": [],
             "body": {},
             "url": "{{domain}}/api/v2/taxonomy_terms",
-            "description": "List of taxonomy terms\n\n### Scope\n`taxonomy_terms.read`\n\n#### Parameters  \n| Parameter name | Value | Description |\n| ------------- |----------- |------------|\n| search  | string | Term name. |\n| machine\\_name  | string | Taxonomy term bundle. You may specify multiple values E.g. `machine_name[]=example&machine_name[]=example2` |\n| language  | string | Language code E.g. language=en. |"
+            "description": "List of taxonomy terms\n\n### Scope\n`taxonomy_terms.read`\n\n#### Parameters  \n| Parameter name | Value | Description |\n| ------------- |----------- |------------|\n| search  | string | Term name. |\n| machine\\_name  | string | Taxonomy term bundle. You may specify multiple values E.g. `machine_name[]=example&machine_name[]=example2` |\n| language  | string | Language code E.g. language=en |"
           },
           "response": [
             {
